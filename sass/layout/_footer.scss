@@ -24,7 +24,8 @@ footer {
         margin-bottom: 15px;
     }
 
-    ul li a{
+    ul li {
+        display: flex;
         justify-content: space-between;
     }
 
