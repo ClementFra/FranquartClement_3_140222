@@ -8,22 +8,15 @@ footer {
     min-width: 320px;
 
     h3 {
+        justify-content: center;
         color: #e6e6e6;
         font-weight: normal;
         font-size: 1.2em;
         font-family: 'Shrikhand', cursive;
     }
-
     a {
         color: #FFF;
     }
-
-    a:hover {
-        text-decoration: underline;
-        color: #FFF;
-        margin-bottom: 15px;
-    }
-
     ul li {
         display: flex;
         justify-content: space-between;
