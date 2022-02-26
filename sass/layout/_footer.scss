@@ -1,25 +1,25 @@
 footer {
-    background-color: #353535;
-    color: #FFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 100%;
-    min-width: 320px;
+  background-color: #353535;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px 0;
+  max-width: 100%;
+  min-width: 320px;
 
-    h3 {
-        justify-content: center;
-        color: #e6e6e6;
-        font-weight: normal;
-        font-size: 1.2em;
-        font-family: 'Shrikhand', cursive;
-    }
-    a {
-        color: #FFF;
-    }
-    ul li {
-        display: flex;
-        justify-content: space-between;
-    }
+  h3 {
+    color: #e6e6e6;
+    font-weight: normal;
+    font-size: 1.2em;
+    font-family: "Shrikhand", cursive;
+    margin-left: 40px;
+  }
+  a {
+    color: #fff;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
 
 }
