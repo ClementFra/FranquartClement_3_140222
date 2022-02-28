@@ -2,18 +2,57 @@
   width: 100%;
   height: 42px;
   position: relative;
-  background-color: $color_repas;
+  background-color: darken($color_repas, 8.1%);
   p {
     text-align: center;
     font-size: 1.4em;
     font-weight: bold;
   }
-  i{
-    position:relative;
-	right: 1em;
+  i {
+    position: relative;
+    right: 1em;
+  }
+}
+#info {
+  background-color: darken($color_repas, 2.6%);
+  text-align: center;
+  height: 287px;
+  & h1 {
+    text-align: center;
+  }
+  & p {
+    text-align: center;
+    font-size: 1.2em;
   }
 }
 
-#info{
+#restaurants {
+  background-color: darken($color_repas, 3.6%);
 
+  h2 {
+    flex-basis: 100%;
+  }
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  figure {
+      flex-basis: 33%;
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
+  }
+  img {
+    height: 100%;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 18px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 6px 6px darken($color_repas, 28.6%);
+  }
 }
