@@ -25,6 +25,23 @@
     font-size: 1.2em;
   }
 }
+#steps {
+  ol {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+  }
+  li{
+    width: 250px;
+    height: 50px;
+    font-size: 1.2em;
+    background-color: darken($color_repas, 2.6%);
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+}
 
 #restaurants {
   background-color: darken($color_repas, 3.6%);
@@ -39,12 +56,11 @@
   }
   figure {
     background-color: white;
-    padding: 5px;
     border-radius: 15px;
     box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
   }
   figure > img {
-    height: 250px;
+    height: 200px;
     width: 500px;
   }
   img {
