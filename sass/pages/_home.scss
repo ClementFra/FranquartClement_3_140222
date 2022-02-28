@@ -43,6 +43,8 @@
   }
 }
 #steps {
+  counter-reset: steps;
+  
   ol {
     display: flex;
     flex-direction: column;
@@ -50,6 +52,22 @@
     align-content: space-between; 
   }
   li {
+    position: relative;
+    &::before{
+      content: "" counter(steps);
+      counter-increment: steps;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background-color: $color_primary;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 16px;
+      left: -16px;
+    }
     padding: 20px 40px;
     font-size: 1.2em;
     border-radius: 15px;
@@ -68,6 +86,7 @@
     margin-left: 30px;
   }
   article {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -98,6 +117,8 @@
     height: 30px;
     font-size: 1.2em;
     text-align: center;
+    top: 50px;
+    left: 450px;
   }
   figcaption {
     font-size: 1em;
