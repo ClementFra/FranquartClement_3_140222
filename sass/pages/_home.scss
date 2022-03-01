@@ -1,6 +1,11 @@
+#search-bar , #info{
+  padding: 1px;
+}
+#steps h2, #restaurants h2 {
+  margin-left: 80px;
+}
 #search-bar {
   background-color: darken($color_repas, 8.1%);
-  padding: 1px;
   p {
     text-align: center;
     font-size: 1.4em;
@@ -15,10 +20,8 @@
   background-color: darken($color_repas, 3.6%);
   height: 257px;
   text-align: center;
-  padding: 1px;
 
   h1 {
-    padding-left: 50px;
     font-size: 2em;
   }
   p {
@@ -43,7 +46,6 @@
 }
 #steps {
   counter-reset: steps;
-
   ol {
     display: flex;
     flex-direction: column;
@@ -68,23 +70,21 @@
       bottom: 16px;
       left: -16px;
     }
-    padding: 20px 40px;
+    padding: 20px 60px;
     font-size: 1.2em;
     border-radius: 15px;
     margin-bottom: 10px;
     background-color: darken($color_repas, 2.6%);
   }
   i.fas {
-    margin-right: 15px;
+    margin-right: 20px;
+    margin-left: -20px;
     color: lightslategray;
   } 
 }
 
 #restaurants {
   background-color: darken($color_repas, 3.6%);
-  h2 {
-    margin-left: 30px;
-  }
   article {
     position: relative;
     display: flex;
@@ -126,13 +126,8 @@
   figcaption {
     font-size: 1em;
     margin-left: 15px;
-    display: flex;
-    justify-content: space-between;
     h3 {
       font-weight: bold;
-    }
-    p{
-      flex-direction: row;
     }
     i{
       font-size: 30px;
