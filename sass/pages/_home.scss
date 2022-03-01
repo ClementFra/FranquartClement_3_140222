@@ -44,16 +44,17 @@
 }
 #steps {
   counter-reset: steps;
-  
+
   ol {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: space-between; 
-  }
+    align-content: space-between;
+  } 
+
   li {
     position: relative;
-    &::before{
+    &::before {
       content: "" counter(steps);
       counter-increment: steps;
       display: flex;
@@ -77,7 +78,7 @@
   i.fas {
     margin-right: 15px;
     color: lightslategray;
-  }
+  } 
 }
 
 #restaurants {
@@ -98,35 +99,52 @@
     box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
   }
   figure > img {
-    height: 200px;
+    height: 250px;
     width: 500px;
   }
   img {
-    max-width: 100%;
+    max-height: 200px;
+    max-width: 400px;
     height: 100%;
     width: 100%;
+    object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
   span {
     position: absolute;
     transform: translate(-50%, -50%);
-    background-color: lightgreen;
-    color: green;
+    background-color: $color_ter;
+    color: darken($color_ter, 50%);
     width: 87px;
     height: 30px;
     font-size: 1.2em;
-    text-align: center;
+    display: grid;
+    place-items: center;
     top: 50px;
-    left: 450px;
+    left: 420px;
   }
   figcaption {
     font-size: 1em;
     margin-left: 15px;
-
+    display: flex;
+    justify-content: space-between;
     h3 {
       font-weight: bold;
     }
-
+    p{
+      flex-direction: row;
+    }
+    i{
+      font-size: 30px;
+      color: grey;
+      &:hover{
+          animation: fill 1s ease-out;
+          background: linear-gradient($color_secondary, $color_primary);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: bold;
+      }
+    }
   }
 }
