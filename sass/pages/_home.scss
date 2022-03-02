@@ -1,7 +1,9 @@
-#search-bar , #info{
+#search-bar,
+#info {
   padding: 1px;
 }
-#steps h2, #restaurants h2 {
+#steps h2,
+#restaurants h2 {
   margin-left: 80px;
 }
 #search-bar {
@@ -51,7 +53,7 @@
     flex-direction: column;
     align-items: center;
     align-content: space-between;
-  } 
+  }
 
   li {
     position: relative;
@@ -80,7 +82,7 @@
     margin-right: 20px;
     margin-left: -20px;
     color: lightslategray;
-  } 
+  }
 }
 
 #restaurants {
@@ -130,18 +132,55 @@
     h3 {
       font-weight: bold;
     }
-    i{
+    i {
       font-size: 30px;
       color: grey;
-      &:hover{
-          animation: fill 1s ease-out;
-          background: linear-gradient($color_secondary, $color_primary);
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font-weight: bold;
+      &:hover {
+        animation: fill 1s ease-out;
+        background: linear-gradient($color_secondary, $color_primary);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
       }
     }
   }
 }
+@media screen and (min-width: 1200px) {
+  #steps {
+    ol {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 40px;
+      margin-bottom: 20px;
+    }
+  }
+  #restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    h2{
+      flex-basis: 100%;
+    }
+    span{
+      left: 380px;
+    }
 
-  
+  }
+}
+
+@media screen and (min-width: 992px){
+  #restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    h2{
+      flex-basis: 100%;
+    }
+    span{
+      left: 380px;
+    }
+  }
+}
