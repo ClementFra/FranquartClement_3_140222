@@ -1,7 +1,4 @@
-#search-bar,
-#info {
-  padding: 1px;
-}
+
 #steps h2,
 #restaurants h2 {
   margin-left: 80px;
@@ -10,8 +7,10 @@
   background-color: darken($color_back, 8.1%);
   p {
     text-align: center;
-    font-size: 1.4em;
     font-weight: bold;
+    color: #353535;
+    padding: 15px 0;
+
   }
   i {
     position: relative;
@@ -19,58 +18,53 @@
   }
 }
 #info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: darken($color_back, 3.6%);
-  height: 257px;
   text-align: center;
+  padding: 20px 0;
 
   h1 {
-    font-size: 2em;
+    width: 75%;
+    font-size: 1.5em;
   }
   p {
-    color: gray;
+    color: $color_lite_black;
     font-size: 1em;
+    margin-top: 20px;
     margin-bottom: 50px;
-  }
-  a {
-    color: white;
-    font-weight: bold;
-    font-size: 1.5em;
-    padding: 20px 15px;
-    background-image: linear-gradient(
-      to top,
-      rgba(174, 86, 220, 0.9),
-      rgba(255, 121, 218, 0.9)
-    );
-    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 35px;
-    height: 150px;
+    width: 70%;
   }
 }
 #steps {
+  display: flex;
+  flex-direction: column;
   counter-reset: steps;
   ol {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: space-between;
+    width: 70%;
   }
 
   li {
     position: relative;
     &::before {
-      content: "" counter(steps);
+      content:counter(steps);
       counter-increment: steps;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       color: white;
       background-color: $color_primary;
       width: 32px;
       height: 32px;
       border-radius: 50%;
       position: absolute;
-      bottom: 16px;
       left: -16px;
+      top: 50%;
+      transform: translateY(-50%);
+     
+
     }
     padding: 20px 60px;
     font-size: 1.2em;
@@ -146,6 +140,20 @@
     }
   }
 }
+@media screen and (min-width: 992px){
+  #restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    h2{
+      flex-basis: 100%;
+    }
+    span{
+      left: 380px;
+    }
+  }
+
 @media screen and (min-width: 1200px) {
   #steps {
     ol {
@@ -170,18 +178,4 @@
 
   }
 }
-
-@media screen and (min-width: 992px){
-  #restaurants {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    h2{
-      flex-basis: 100%;
-    }
-    span{
-      left: 380px;
-    }
-  }
 }
