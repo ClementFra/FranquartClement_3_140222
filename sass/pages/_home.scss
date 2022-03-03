@@ -7,7 +7,7 @@
   margin-left: 80px;
 }
 #search-bar {
-  background-color: darken($color_repas, 8.1%);
+  background-color: darken($color_back, 8.1%);
   p {
     text-align: center;
     font-size: 1.4em;
@@ -19,7 +19,7 @@
   }
 }
 #info {
-  background-color: darken($color_repas, 3.6%);
+  background-color: darken($color_back, 3.6%);
   height: 257px;
   text-align: center;
 
@@ -76,7 +76,7 @@
     font-size: 1.2em;
     border-radius: 15px;
     margin-bottom: 10px;
-    background-color: darken($color_repas, 2.6%);
+    background-color: darken($color_back, 2.6%);
   }
   i.fas {
     margin-right: 20px;
@@ -86,7 +86,7 @@
 }
 
 #restaurants {
-  background-color: darken($color_repas, 3.6%);
+  background-color: darken($color_back, 3.6%);
   article {
     position: relative;
     display: flex;
