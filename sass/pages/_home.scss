@@ -1,8 +1,4 @@
 
-#steps h2,
-#restaurants h2 {
-  margin-left: 80px;
-}
 #search-bar {
   background-color: darken($color_back, 8.1%);
   p {
@@ -41,65 +37,76 @@
   display: flex;
   flex-direction: column;
   counter-reset: steps;
+  align-items: center;
   ol {
     display: flex;
     flex-direction: column;
-    align-items: center;
     align-content: space-between;
-    width: 70%;
+    width: 90%;
+    margin: 0 auto;
   }
 
   li {
     position: relative;
+    height: 75px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
     &::before {
       content:counter(steps);
       counter-increment: steps;
       color: white;
       background-color: $color_primary;
-      width: 32px;
-      height: 32px;
+      width: 24px;
+      height: 24px;
       border-radius: 50%;
       position: absolute;
-      left: -16px;
+      left: -12px;
       top: 50%;
       transform: translateY(-50%);
-     
-
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8em;
     }
-    padding: 20px 60px;
-    font-size: 1.2em;
     border-radius: 15px;
     margin-bottom: 10px;
     background-color: darken($color_back, 2.6%);
   }
+  i{
+    margin: 0 25px;
+  }
   i.fas {
-    margin-right: 20px;
-    margin-left: -20px;
     color: lightslategray;
   }
 }
 
 #restaurants {
   background-color: darken($color_back, 3.6%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   article {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    width:90%;
+    margin-bottom: 20px;
+    a{
+      width: 100%;
+    }
   }
   figure {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
-  }
-  figure > img {
-    height: 250px;
-    width: 500px;
+    margin: 0;
   }
   img {
     max-height: 200px;
-    max-width: 400px;
+    max-width: 600px;
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -117,17 +124,28 @@
     display: grid;
     place-items: center;
     top: 50px;
-    left: 420px;
+    left: 450px;
   }
   figcaption {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 1em;
     margin-left: 15px;
-
+    padding-bottom: 10px;
     h3 {
       font-weight: bold;
     }
+    div{
+      h3{
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+    }
     i {
       font-size: 30px;
+      margin-right: 20px;
+      margin-top: 20px;
       color: grey;
       &:hover {
         animation: fill 1s ease-out;
