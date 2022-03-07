@@ -461,6 +461,7 @@ footer h3 {
   font-size: 1.2em;
   font-family: "Shrikhand", cursive;
   margin-left: 40px;
+  margin-bottom: 15px;
 }
 footer a {
   color: #fff;
@@ -470,6 +471,7 @@ footer li {
 }
 footer ul li {
   margin-bottom: 10px;
+  margin-left: 40px;
 }
 footer i.fas {
   margin-right: 10px;
@@ -515,12 +517,18 @@ footer i.fas {
   flex-direction: column;
   counter-reset: steps;
   align-items: center;
+  margin-bottom: 30px;
+}
+#steps h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: -50%;
 }
 #steps ol {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 #steps li {
@@ -562,6 +570,11 @@ footer i.fas {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#restaurants h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: -60%;
 }
 #restaurants article {
   position: relative;
@@ -633,40 +646,40 @@ footer i.fas {
   font-weight: bold;
 }
 
-@media screen and (min-width: 992px) {
-  #restaurants {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+@media screen and (max-width: 320px) {
+  #steps h2 {
+    margin-left: -30%;
   }
+
   #restaurants h2 {
-    flex-basis: 100%;
+    margin-left: -40%;
   }
   #restaurants span {
-    left: 380px;
+    left: 230px;
   }
 }
-@media screen and (min-width: 992px) and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   #steps ol {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 40px;
     margin-bottom: 20px;
+    margin-top: 15px;
   }
 
   #restaurants {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
   }
   #restaurants h2 {
     flex-basis: 100%;
   }
-  #restaurants span {
-    left: 380px;
+  #restaurants article figure {
+    width: 40%;
+  }
+  #restaurants article figure span {
+    left: 300px;
   }
 }
 
