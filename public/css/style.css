@@ -420,16 +420,12 @@ figure img {
 }
 #menu #entree article {
   display: flex;
-  flex-direction: row;
-  align-content: center;
+  flex-wrap: wrap;
   background-color: white;
   border-radius: 15px;
   margin-bottom: 20px;
   width: 80%;
   position: relative;
-}
-#menu #entree article div {
-  margin-left: 10px;
 }
 #menu #entree article div p {
   color: #353535;
@@ -445,7 +441,7 @@ figure img {
   height: 100%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  left: 90%;
+  left: 85%;
 }
 #menu #dish {
   margin-left: 20px;
@@ -480,7 +476,7 @@ figure img {
   height: 100%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  left: 90%;
+  left: 85%;
 }
 #menu #dessert {
   margin-left: 20px;
@@ -515,7 +511,7 @@ figure img {
   height: 100%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  left: 90%;
+  left: 85%;
 }
 #menu #dessert p strong {
   margin-left: 20px;

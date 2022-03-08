@@ -22,15 +22,13 @@ figure {
     }
     article {
       display: flex;
-      flex-direction: row;
-      align-content: center;
+      flex-wrap: wrap;
       background-color: white;
       border-radius: 15px;
       margin-bottom: 20px;
       width: 80%;
       position: relative;
       div {
-        margin-left: 10px;
         p {
           color: #353535;
           font-size: 0.9em;
@@ -46,7 +44,7 @@ figure {
         height: 100%;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        left: 90%;
+        left: 85%;
       }
     }
   }
@@ -82,7 +80,7 @@ figure {
         height: 100%;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        left: 90%;
+        left: 85%;
       }
     }
   }
@@ -118,7 +116,7 @@ figure {
         height: 100%;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        left: 90%;
+        left: 85%;
       }
     }
     p {
