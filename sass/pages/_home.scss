@@ -184,8 +184,12 @@
     }
   }
 }
+
 @media screen and (min-width: 992px) {
   #steps {
+    h2 {
+      margin-left: -70%;
+    }
     ol {
       display: flex;
       flex-direction: row;
@@ -196,23 +200,17 @@
     }
   }
   #restaurants {
-    display: flex;
-    flex-wrap: wrap;
     h2 {
-      flex-basis: 100%;
+      margin-left: -75%;
     }
-    article {
       figure {
         width: 40%;
         span {
           left: 300px;
         }
       }
-    }
   }
 
   @media screen and (min-width: 1200px) {
-
-    
   }
 }

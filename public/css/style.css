@@ -659,6 +659,9 @@ footer i.fas {
   }
 }
 @media screen and (min-width: 992px) {
+  #steps h2 {
+    margin-left: -70%;
+  }
   #steps ol {
     display: flex;
     flex-direction: row;
@@ -668,17 +671,13 @@ footer i.fas {
     margin-top: 15px;
   }
 
-  #restaurants {
-    display: flex;
-    flex-wrap: wrap;
-  }
   #restaurants h2 {
-    flex-basis: 100%;
+    margin-left: -75%;
   }
-  #restaurants article figure {
+  #restaurants figure {
     width: 40%;
   }
-  #restaurants article figure span {
+  #restaurants figure span {
     left: 300px;
   }
 }
