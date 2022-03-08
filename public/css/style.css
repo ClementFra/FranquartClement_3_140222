@@ -415,15 +415,18 @@ figure img {
   margin-left: 20px;
 }
 #menu #entree h2 {
-  border-bottom: 2px solid #99e2d0;
+  border-bottom: 4px solid #99e2d0;
+  width: 70px;
 }
 #menu #entree article {
   display: flex;
   flex-direction: row;
+  align-content: center;
   background-color: white;
   border-radius: 15px;
   margin-bottom: 20px;
-  width: 90%;
+  width: 80%;
+  position: relative;
 }
 #menu #entree article div {
   margin-left: 10px;
@@ -433,48 +436,86 @@ figure img {
   font-size: 0.9em;
 }
 #menu #entree article i {
+  position: absolute;
+  display: grid;
+  place-items: center;
   color: white;
   background-color: #99e2d0;
-}
-#menu #entree p strong {
-  margin-left: 20px;
+  width: 80px;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  left: 90%;
 }
 #menu #dish {
   margin-left: 20px;
 }
 #menu #dish h2 {
-  border-bottom: 2px solid #99e2d0;
+  border-bottom: 4px solid #99e2d0;
+  width: 60px;
 }
 #menu #dish article {
+  position: relative;
   display: flex;
   flex-direction: row;
   background-color: white;
   border-radius: 15px;
   margin-bottom: 20px;
-  width: 90%;
+  width: 80%;
 }
 #menu #dish article div {
   margin-left: 10px;
 }
-#menu #dish p strong {
-  margin-left: 20px;
+#menu #dish article div p {
+  color: #353535;
+  font-size: 0.9em;
+}
+#menu #dish article i {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  color: white;
+  background-color: #99e2d0;
+  width: 80px;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  left: 90%;
 }
 #menu #dessert {
   margin-left: 20px;
 }
 #menu #dessert h2 {
-  border-bottom: 2px solid #99e2d0;
+  border-bottom: 4px solid #99e2d0;
+  width: 60px;
 }
 #menu #dessert article {
+  position: relative;
   display: flex;
   flex-direction: row;
   background-color: white;
   border-radius: 15px;
   margin-bottom: 20px;
-  width: 90%;
+  width: 80%;
 }
 #menu #dessert article div {
   margin-left: 10px;
+}
+#menu #dessert article div p {
+  color: #353535;
+  font-size: 0.9em;
+}
+#menu #dessert article i {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  color: white;
+  background-color: #99e2d0;
+  width: 80px;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  left: 90%;
 }
 #menu #dessert p strong {
   margin-left: 20px;
