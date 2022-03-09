@@ -200,15 +200,21 @@
     }
   }
   #restaurants {
+    display: flex;
     h2 {
       margin-left: -75%;
     }
+    article{
+      display: flex;
+      flex-direction: row;
       figure {
         width: 40%;
         span {
           left: 300px;
         }
       }
+    }
+      
   }
 
   @media screen and (min-width: 1200px) {
