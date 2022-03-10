@@ -201,10 +201,10 @@
   }
   #restaurants {
     h2 {
+      flex-basis: 100%;
       margin-left: -75%;
     }
     article{
-      display: flex;
       figure {
         width: 40%;
         span {
