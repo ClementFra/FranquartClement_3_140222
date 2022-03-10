@@ -406,10 +406,18 @@ figure img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-#menu h1 {
+#menu div {
+  display: flex;
+  justify-content: space-between;
+}
+#menu div h1 {
   margin-left: 20px;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+#menu div i {
+  margin-top: 30px;
+  margin-right: 40px;
 }
 #menu #entree {
   margin-left: 20px;
@@ -419,29 +427,32 @@ figure img {
   width: 70px;
 }
 #menu #entree article {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
   background-color: white;
   border-radius: 15px;
   margin-bottom: 20px;
   width: 80%;
-  position: relative;
+}
+#menu #entree article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
 }
 #menu #entree article div p {
+  width: auto;
+  margin: 0;
   color: #353535;
   font-size: 0.9em;
+  margin-bottom: 10px;
 }
-#menu #entree article i {
+#menu #entree article strong {
   position: absolute;
-  display: grid;
-  place-items: center;
-  color: white;
-  background-color: #99e2d0;
-  width: 80px;
-  height: 100%;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  left: 85%;
+  right: 24px;
+  bottom: 9%;
+  font-weight: bold;
+  display: inline-block;
 }
 #menu #dish {
   margin-left: 20px;
@@ -453,30 +464,30 @@ figure img {
 #menu #dish article {
   position: relative;
   display: flex;
-  flex-direction: row;
   background-color: white;
   border-radius: 15px;
   margin-bottom: 20px;
   width: 80%;
 }
 #menu #dish article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: 10px;
 }
 #menu #dish article div p {
+  width: auto;
+  margin: 0;
   color: #353535;
   font-size: 0.9em;
+  margin-bottom: 10px;
 }
-#menu #dish article i {
+#menu #dish article strong {
   position: absolute;
-  display: grid;
-  place-items: center;
-  color: white;
-  background-color: #99e2d0;
-  width: 80px;
-  height: 100%;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  left: 85%;
+  right: 24px;
+  bottom: 9%;
+  font-weight: bold;
+  display: inline-block;
 }
 #menu #dessert {
   margin-left: 20px;
@@ -488,33 +499,30 @@ figure img {
 #menu #dessert article {
   position: relative;
   display: flex;
-  flex-direction: row;
   background-color: white;
   border-radius: 15px;
   margin-bottom: 20px;
   width: 80%;
 }
 #menu #dessert article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: 10px;
 }
 #menu #dessert article div p {
+  width: auto;
+  margin: 0;
   color: #353535;
   font-size: 0.9em;
+  margin-bottom: 10px;
 }
-#menu #dessert article i {
+#menu #dessert article strong {
   position: absolute;
-  display: grid;
-  place-items: center;
-  color: white;
-  background-color: #99e2d0;
-  width: 80px;
-  height: 100%;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  left: 85%;
-}
-#menu #dessert p strong {
-  margin-left: 20px;
+  right: 24px;
+  bottom: 9%;
+  font-weight: bold;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */
