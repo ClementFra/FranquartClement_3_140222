@@ -173,6 +173,9 @@
     h2 {
       margin-left: -30%;
     }
+    li {
+      font-size: 0.99em;
+    }
   }
 
   #restaurants {
@@ -204,7 +207,7 @@
       flex-basis: 100%;
       margin-left: -75%;
     }
-    article{
+    article {
       figure {
         width: 40%;
         span {
@@ -212,9 +215,17 @@
         }
       }
     }
-      
   }
 
   @media screen and (min-width: 1200px) {
+    #restaurants {
+      article {
+        figure {
+          span {
+            left: 340px;
+          }
+        }
+      }
+    }
   }
 }
