@@ -403,7 +403,7 @@ th {
   padding: 0;
 }
 
-header, main, footer {
+#restaurants > div, #steps > div, #footer > div {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -479,7 +479,7 @@ footer i.fas {
 }
 
 @media screen and (min-width: 992px) {
-  div {
+  footer div {
     text-align: center;
   }
 }
@@ -517,26 +517,25 @@ footer i.fas {
   width: 70%;
 }
 
-#steps {
+#steps > div {
   display: flex;
   flex-direction: column;
   counter-reset: steps;
-  align-items: center;
-  margin-bottom: 30px;
+  padding: 40px 35px;
 }
-#steps h2 {
+#steps > div h2 {
   margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: -50%;
+  margin-bottom: 30px;
+  margin-left: 5px;
 }
-#steps ol {
+#steps > div ol {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
-#steps li {
+#steps > div li {
   position: relative;
   height: 75px;
   padding-right: 20px;
@@ -546,7 +545,7 @@ footer i.fas {
   margin-bottom: 10px;
   background-color: #f8f8f8;
 }
-#steps li::before {
+#steps > div li::before {
   content: counter(steps);
   counter-increment: steps;
   color: white;
@@ -563,65 +562,67 @@ footer i.fas {
   align-items: center;
   font-size: 0.8em;
 }
-#steps i {
-  margin: 0 25px;
+#steps > div li:hover {
+  background-color: #f5edff;
 }
-#steps i.fas {
+#steps > div li:hover i {
+  color: #9356DC;
+}
+#steps > div i {
+  margin: 0 22px;
+}
+#steps > div i.fas {
   color: lightslategray;
 }
 
 #restaurants {
   background-color: #f6f6f6;
+}
+#restaurants > div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 40px 35px;
 }
-#restaurants h2 {
+#restaurants > div h2 {
   margin-top: 30px;
   margin-bottom: 20px;
-  margin-left: -60%;
 }
-#restaurants article {
+#restaurants > div article {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
   margin-bottom: 20px;
-}
-#restaurants article a {
   width: 100%;
 }
-#restaurants figure {
+#restaurants > div article a {
+  width: 100%;
+}
+#restaurants > div figure {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
   margin: 0;
 }
-#restaurants img {
-  max-height: 200px;
-  max-width: 600px;
-  height: 100%;
+#restaurants > div img {
+  height: 150px;
   width: 100%;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-#restaurants span {
+#restaurants > div span {
   position: absolute;
-  transform: translate(-50%, -50%);
   background-color: #99E2D0;
   color: #278870;
-  width: 87px;
-  height: 30px;
-  font-size: 1.2em;
-  display: grid;
-  place-items: center;
-  top: 50px;
-  left: 450px;
+  padding: 7px 10px;
+  font-size: 0.9em;
+  top: 12px;
+  right: 12px;
+  border-radius: 2px;
 }
-#restaurants figcaption {
+#restaurants > div figcaption {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -629,20 +630,20 @@ footer i.fas {
   margin-left: 15px;
   padding-bottom: 10px;
 }
-#restaurants figcaption h3 {
+#restaurants > div figcaption h3 {
   font-weight: bold;
 }
-#restaurants figcaption div h3 {
+#restaurants > div figcaption div h3 {
   margin-bottom: 10px;
   margin-top: 10px;
 }
-#restaurants figcaption i {
+#restaurants > div figcaption i {
   font-size: 30px;
   margin-right: 20px;
   margin-top: 20px;
   color: grey;
 }
-#restaurants figcaption i:hover {
+#restaurants > div figcaption i:hover {
   animation: fill 1s ease-out;
   background-image: linear-gradient(#FF76DA, #9356DC);
   background-clip: text;
@@ -651,48 +652,26 @@ footer i.fas {
   font-weight: bold;
 }
 
-@media screen and (max-width: 320px) {
-  #steps h2 {
-    margin-left: -30%;
+@media screen and (min-width: 768px) {
+  #restaurants > div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-  #steps li {
-    font-size: 0.99em;
+  #restaurants > div h2 {
+    flex-basis: 100%;
   }
-
-  #restaurants h2 {
-    margin-left: -40%;
-  }
-  #restaurants span {
-    left: 230px;
+  #restaurants > div article {
+    flex-basis: 48%;
   }
 }
 @media screen and (min-width: 992px) {
-  #steps h2 {
-    margin-left: -70%;
-  }
-  #steps ol {
-    display: flex;
+  #steps > div ol {
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 40px;
-    margin-bottom: 20px;
-    margin-top: 15px;
   }
-
-  #restaurants h2 {
-    flex-basis: 100%;
-    margin-left: -75%;
-  }
-  #restaurants article figure {
-    width: 40%;
-  }
-  #restaurants article figure span {
-    left: 300px;
-  }
-}
-@media screen and (min-width: 992px) and (min-width: 1200px) {
-  #restaurants article figure span {
-    left: 340px;
+  #steps > div ol li {
+    flex-basis: 31%;
   }
 }
 
