@@ -482,7 +482,7 @@ footer i.fas {
 @media screen and (min-width: 992px) {
   footer div {
     text-align: center;
-    margin-left: -10%;
+    margin-left: -5%;
   }
 }
 #search-bar {
@@ -677,7 +677,13 @@ footer i.fas {
     width: 80%;
   }
   #steps > div ol li {
+    font-size: 0.9em;
     flex-basis: 31%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #restaurants > div article {
+    flex-basis: 23%;
   }
 }
 
