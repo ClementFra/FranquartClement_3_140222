@@ -1,5 +1,5 @@
 #search-bar {
-  background-color: darken($color_back, 8.1%);
+  background-color:$color_back_search;
   p {
     text-align: center;
     font-weight: bold;
@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: darken($color_back, 3.6%);
+  background-color: $color_back_lite;
   text-align: center;
   padding: 20px 0;
 
@@ -27,8 +27,7 @@
     color: $color_lite_black;
     font-size: 1em;
     margin-top: 20px;
-    margin-bottom: 50px;
-    width: 70%;
+    margin-bottom: 30px;
   }
 }
 #steps > div {
@@ -39,22 +38,22 @@
   h2 {
     margin-top: 15px;
     margin-bottom: 30px;
-    margin-left: 5px;
   }
   ol {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    width: 100%;
+    width: 105%;
     margin: 0 auto;
   }
 
   li {
     position: relative;
-    height: 75px;
-    padding-right: 20px;
+    height: 60px;
+    padding-right: 15px;
     display: flex;
     align-items: center;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
     &::before {
       content: counter(steps);
       counter-increment: steps;
@@ -78,9 +77,9 @@
         color: $color_primary;
       }
     }
-    border-radius: 15px;
-    margin-bottom: 10px;
-    background-color: darken($color_back, 2.6%);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: $color_back_lite;
   }
   i {
     margin: 0 22px;
@@ -91,11 +90,11 @@
 }
 
 #restaurants {
-  background-color: darken($color_back, 3.6%);
+  background-color: $color_back_lite;
   > div {
     display: flex;
     flex-direction: column;
-    padding: 40px 35px;
+    padding: 20px 35px;
     h2 {
       margin-top: 30px;
       margin-bottom: 20px;
@@ -107,7 +106,7 @@
       justify-content: space-around;
       align-items: center;
       margin-bottom: 20px;
-      width: 100%;
+      width: 107%;
       a {
         width: 100%;
       }
@@ -117,6 +116,7 @@
       border-radius: 15px;
       box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
       margin: 0;
+      margin-left:-16px;
     }
     img {
       height: 150px;
@@ -128,7 +128,7 @@
     span {
       position: absolute;
       background-color: $color_ter;
-      color: darken($color_ter, 40%);
+      color: $color_span;
       padding: 7px 10px;
       font-size: 0.9em;
       top: 12px;
@@ -152,10 +152,10 @@
         }
       }
       i {
-        font-size: 30px;
+        font-size: 23px;
         margin-right: 20px;
-        margin-top: 20px;
-        color: grey;
+        margin-top: 15px;
+        color: black;
         &:hover {
           animation: fill 1s ease-out;
           background-image: linear-gradient($color_secondary, $color_primary);
@@ -178,7 +178,7 @@
       flex-basis: 100%;
     }
     article {
-      flex-basis: 48%;
+      flex-basis: 42%;
     }
   }
 }

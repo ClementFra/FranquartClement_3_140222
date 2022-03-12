@@ -423,13 +423,14 @@ ol {
 
 .btn {
   color: white;
-  padding: 20px 15px;
-  background-image: linear-gradient(to top, rgba(174, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  padding: 15px;
+  background-image: linear-gradient(to right bottom, #ff76da, #e86bdb, #cf63dc, #b35cdc, #9356dc);
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
   border-radius: 35px;
   line-height: 1.2em;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 30px;
 }
 
 header {
@@ -513,8 +514,7 @@ footer i.fas {
   color: #353535;
   font-size: 1em;
   margin-top: 20px;
-  margin-bottom: 50px;
-  width: 70%;
+  margin-bottom: 30px;
 }
 
 #steps > div {
@@ -526,24 +526,24 @@ footer i.fas {
 #steps > div h2 {
   margin-top: 15px;
   margin-bottom: 30px;
-  margin-left: 5px;
 }
 #steps > div ol {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  width: 100%;
+  width: 105%;
   margin: 0 auto;
 }
 #steps > div li {
   position: relative;
-  height: 75px;
-  padding-right: 20px;
+  height: 60px;
+  padding-right: 15px;
   display: flex;
   align-items: center;
-  border-radius: 15px;
-  margin-bottom: 10px;
-  background-color: #f8f8f8;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: #f6f6f6;
 }
 #steps > div li::before {
   content: counter(steps);
@@ -581,7 +581,7 @@ footer i.fas {
 #restaurants > div {
   display: flex;
   flex-direction: column;
-  padding: 40px 35px;
+  padding: 20px 35px;
 }
 #restaurants > div h2 {
   margin-top: 30px;
@@ -594,7 +594,7 @@ footer i.fas {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 20px;
-  width: 100%;
+  width: 107%;
 }
 #restaurants > div article a {
   width: 100%;
@@ -604,6 +604,7 @@ footer i.fas {
   border-radius: 15px;
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
   margin: 0;
+  margin-left: -16px;
 }
 #restaurants > div img {
   height: 150px;
@@ -615,7 +616,7 @@ footer i.fas {
 #restaurants > div span {
   position: absolute;
   background-color: #99E2D0;
-  color: #278870;
+  color: #008766;
   padding: 7px 10px;
   font-size: 0.9em;
   top: 12px;
@@ -638,10 +639,10 @@ footer i.fas {
   margin-top: 10px;
 }
 #restaurants > div figcaption i {
-  font-size: 30px;
+  font-size: 23px;
   margin-right: 20px;
-  margin-top: 20px;
-  color: grey;
+  margin-top: 15px;
+  color: black;
 }
 #restaurants > div figcaption i:hover {
   animation: fill 1s ease-out;
@@ -662,7 +663,7 @@ footer i.fas {
     flex-basis: 100%;
   }
   #restaurants > div article {
-    flex-basis: 48%;
+    flex-basis: 42%;
   }
 }
 @media screen and (min-width: 992px) {
