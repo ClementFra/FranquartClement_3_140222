@@ -5,7 +5,7 @@ figure {
   }
 }
 #menu {
-  background-color: darken(#fff, 3.6%);
+  background-color: #f6f6f6;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   div {
@@ -23,7 +23,6 @@ figure {
   }
 
   #entree {
-    margin-left: 20px;
     h2 {
       border-bottom: 4px solid #99e2d0;
       width: 70px;
@@ -31,10 +30,10 @@ figure {
     article {
       position: relative;
       display: flex;
-      background-color: white;
+      background-color: #ffff;
       border-radius: 15px;
       margin-bottom: 20px;
-      width: 80%;
+      width: 100%;
       div {
         display: flex;
         flex-direction: column;
@@ -59,7 +58,6 @@ figure {
   }
 
   #dish {
-    margin-left: 20px;
     h2 {
       border-bottom: 4px solid #99e2d0;
       width: 60px;
@@ -67,10 +65,9 @@ figure {
     article {
       position: relative;
       display: flex;
-      background-color: white;
+      background-color: #ffff;
       border-radius: 15px;
       margin-bottom: 20px;
-      width: 80%;
       div {
         display: flex;
         flex-direction: column;
@@ -95,7 +92,6 @@ figure {
   }
 
   #dessert {
-    margin-left: 20px;
     h2 {
       border-bottom: 4px solid #99e2d0;
       width: 60px;
@@ -103,10 +99,9 @@ figure {
     article {
       position: relative;
       display: flex;
-      background-color: white;
+      background-color: #ffff;
       border-radius: 15px;
       margin-bottom: 20px;
-      width: 80%;
       div {
         display: flex;
         flex-direction: column;
