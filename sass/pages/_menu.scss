@@ -16,13 +16,23 @@ figure {
       margin-top: 30px;
       margin-bottom: 20px;
     }
-    i{
+    i {
       margin-top: 30px;
       margin-right: 40px;
+      font-size: 30px;
+      &:hover {
+        animation: fill 1s ease-out;
+        background-image: linear-gradient(#FF76DA, #9356DC);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+      }
     }
   }
 
   #entree {
+    margin: 10px;
     h2 {
       border-bottom: 4px solid #99e2d0;
       width: 70px;
@@ -33,14 +43,13 @@ figure {
       background-color: #ffff;
       border-radius: 15px;
       margin-bottom: 20px;
-      width: 100%;
+      box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
       div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-left: 10px;
         p {
-          width: auto;
           margin: 0;
           color: #353535;
           font-size: 0.9em;
@@ -52,12 +61,12 @@ figure {
         right: 24px;
         bottom: 9%;
         font-weight: bold;
-        display: inline-block;
       }
     }
   }
 
   #dish {
+    margin: 10px;
     h2 {
       border-bottom: 4px solid #99e2d0;
       width: 60px;
@@ -68,13 +77,13 @@ figure {
       background-color: #ffff;
       border-radius: 15px;
       margin-bottom: 20px;
+      box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
       div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-left: 10px;
         p {
-          width: auto;
           margin: 0;
           color: #353535;
           font-size: 0.9em;
@@ -92,6 +101,7 @@ figure {
   }
 
   #dessert {
+    margin: 10px;
     h2 {
       border-bottom: 4px solid #99e2d0;
       width: 60px;
@@ -102,13 +112,13 @@ figure {
       background-color: #ffff;
       border-radius: 15px;
       margin-bottom: 20px;
+      box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
       div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin-left: 10px;
         p {
-          width: auto;
           margin: 0;
           color: #353535;
           font-size: 0.9em;
