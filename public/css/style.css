@@ -512,6 +512,7 @@ footer i.fas {
 }
 #info p {
   color: #353535;
+  width: 90%;
   font-size: 1em;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -678,7 +679,8 @@ footer i.fas {
   #steps > div ol {
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
+    padding-left: 10px;
   }
   #steps > div ol li {
     font-size: 0.9em;

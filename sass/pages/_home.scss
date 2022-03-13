@@ -25,6 +25,7 @@
   }
   p {
     color: $color_lite_black;
+    width: 90%;
     font-size: 1em;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -196,7 +197,8 @@
     ol {
       flex-direction: row;
       justify-content: space-between;
-      width: 80%;
+      width: 90%;
+      padding-left: 10px ;
       li {
         font-size: 0.9em;
         flex-basis: 31%;
