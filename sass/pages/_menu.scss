@@ -22,7 +22,7 @@ figure {
       font-size: 30px;
       &:hover {
         animation: fill 1s ease-out;
-        background-image: linear-gradient(#FF76DA, #9356DC);
+        background-image: linear-gradient(#ff76da, #9356dc);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -32,7 +32,7 @@ figure {
   }
 
   #entree {
-    margin: 10px;
+    padding: 0 30px;
     h2 {
       border-bottom: 4px solid #99e2d0;
       width: 70px;
@@ -66,7 +66,7 @@ figure {
   }
 
   #dish {
-    margin: 10px;
+    padding: 20px 30px;
     h2 {
       border-bottom: 4px solid #99e2d0;
       width: 60px;
@@ -101,7 +101,7 @@ figure {
   }
 
   #dessert {
-    margin: 10px;
+    padding: 20px 30px;
     h2 {
       border-bottom: 4px solid #99e2d0;
       width: 60px;
@@ -132,6 +132,24 @@ figure {
         font-weight: bold;
         display: inline-block;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  #entree{
+    article{
+      width: 50%;
+    }
+  }
+  #dish{
+    article{
+      width: 50%;
+    }
+  }
+  #dessert{
+    article{
+      width: 50%;
     }
   }
 }

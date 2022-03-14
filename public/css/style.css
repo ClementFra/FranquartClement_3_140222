@@ -422,14 +422,14 @@ figure img {
 }
 #menu div i:hover {
   animation: fill 1s ease-out;
-  background-image: linear-gradient(#FF76DA, #9356DC);
+  background-image: linear-gradient(#ff76da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
 #menu #entree {
-  margin: 10px;
+  padding: 0 30px;
 }
 #menu #entree h2 {
   border-bottom: 4px solid #99e2d0;
@@ -462,7 +462,7 @@ figure img {
   font-weight: bold;
 }
 #menu #dish {
-  margin: 10px;
+  padding: 20px 30px;
 }
 #menu #dish h2 {
   border-bottom: 4px solid #99e2d0;
@@ -496,7 +496,7 @@ figure img {
   display: inline-block;
 }
 #menu #dessert {
-  margin: 10px;
+  padding: 20px 30px;
 }
 #menu #dessert h2 {
   border-bottom: 4px solid #99e2d0;
@@ -528,6 +528,20 @@ figure img {
   bottom: 9%;
   font-weight: bold;
   display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  #entree article {
+    width: 50%;
+  }
+
+  #dish article {
+    width: 50%;
+  }
+
+  #dessert article {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
