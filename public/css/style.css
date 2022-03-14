@@ -647,7 +647,6 @@ footer i.fas {
   font-size: 23px;
   margin-right: 20px;
   margin-top: 10px;
-  color: black;
 }
 #restaurants > div figcaption i:hover {
   animation: fill 1s ease-out;
