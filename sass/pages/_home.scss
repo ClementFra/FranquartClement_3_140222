@@ -9,6 +9,7 @@
   i {
     position: relative;
     right: 1em;
+    color: $color_lite_black;
   }
 }
 #info {
@@ -35,9 +36,8 @@
   display: flex;
   flex-direction: column;
   counter-reset: steps;
-  padding: 40px 35px;
+  padding: 40px 25px;
   h2 {
-    margin-top: 15px;
     margin-bottom: 30px;
   }
   ol {
@@ -50,7 +50,7 @@
 
   li {
     position: relative;
-    height: 60px;
+    height: 65px;
     padding-right: 15px;
     display: flex;
     align-items: center;
@@ -95,9 +95,8 @@
   > div {
     display: flex;
     flex-direction: column;
-    padding: 20px 35px;
+    padding: 40px 25px;
     h2 {
-      margin-top: 30px;
       margin-bottom: 20px;
     }
     article {
@@ -196,8 +195,7 @@
     ol {
       flex-direction: row;
       justify-content: space-between;
-      width: 90%;
-      padding-left: 10px ;
+      width: 80%;
       li {
         font-size: 0.9em;
         flex-basis: 31%;
