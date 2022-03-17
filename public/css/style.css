@@ -444,7 +444,7 @@ header {
 }
 header a:first-of-type {
   position: relative;
-  left: 10px;
+  left: 20px;
 }
 header a:last-of-type {
   margin: 0 auto;
@@ -707,136 +707,84 @@ figure img {
 #menu {
   position: relative;
   background-color: #f6f6f6;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   margin-top: -60px;
   z-index: 1;
+  padding: 30px 20px;
 }
 #menu div {
   display: flex;
   justify-content: space-between;
 }
 #menu div h1 {
-  margin-left: 20px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.8em;
 }
 #menu div i {
-  margin-top: 30px;
-  margin-right: 40px;
+  margin-top: 25px;
+  margin-right: 20px;
   font-size: 30px;
 }
 #menu div i:hover {
   animation: fill 1s ease-out;
-  background-image: linear-gradient(#ff76da, #9356dc);
+  background-image: linear-gradient(#FF76DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
-#menu #entree {
-  padding: 0 30px;
-}
-#menu #entree h2 {
-  border-bottom: 4px solid #99e2d0;
-  width: 70px;
-}
-#menu #entree article {
-  position: relative;
-  display: flex;
-  background-color: #ffff;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
-}
-#menu #entree article div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 10px;
-}
-#menu #entree article div p {
-  margin: 0;
-  color: #353535;
-  font-size: 0.9em;
-  margin-bottom: 10px;
-}
-#menu #entree article strong {
-  position: absolute;
-  right: 24px;
-  bottom: 9%;
-  font-weight: bold;
-}
-#menu #entree article i {
-  display: none;
-}
-#menu #dish {
-  padding: 20px 30px;
-}
-#menu #dish h2 {
-  border-bottom: 4px solid #99e2d0;
-  width: 60px;
-}
-#menu #dish article {
-  position: relative;
-  display: flex;
-  background-color: #ffff;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
-}
-#menu #dish article div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-left: 10px;
-}
-#menu #dish article div p {
-  margin: 0;
-  color: #353535;
-  font-size: 0.9em;
-  margin-bottom: 10px;
-}
-#menu #dish article strong {
-  position: absolute;
-  right: 24px;
-  bottom: 9%;
-  font-weight: bold;
-  display: inline-block;
-}
+#menu #entree,
+#menu #dish,
 #menu #dessert {
-  padding: 20px 30px;
+  padding: 10px 0;
 }
+#menu #entree h2,
+#menu #dish h2,
 #menu #dessert h2 {
-  border-bottom: 4px solid #99e2d0;
-  width: 60px;
+  border-bottom: 4px solid #99E2D0;
+  width: 70px;
+  margin-bottom: 20px;
 }
+#menu #entree article,
+#menu #dish article,
 #menu #dessert article {
   position: relative;
   display: flex;
-  background-color: #ffff;
+  background-color: #fff;
   border-radius: 15px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
 }
+#menu #entree article div,
+#menu #dish article div,
 #menu #dessert article div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 10px;
 }
+#menu #entree article div p,
+#menu #dish article div p,
 #menu #dessert article div p {
-  margin: 0;
   color: #353535;
   font-size: 0.9em;
   margin-bottom: 10px;
+  text-overflow: ellipsis;
 }
+#menu #entree article strong,
+#menu #dish article strong,
 #menu #dessert article strong {
   position: absolute;
   right: 24px;
-  bottom: 9%;
+  bottom: 20%;
   font-weight: bold;
-  display: inline-block;
+  font-size: 0.9em;
+}
+#menu #entree article i,
+#menu #dish article i,
+#menu #dessert article i {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
