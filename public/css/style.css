@@ -433,6 +433,18 @@ ol {
   margin-bottom: 30px;
 }
 
+.btn_2 {
+  color: white;
+  padding: 15px;
+  background-image: linear-gradient(to right bottom, #ff76da, #e86bdb, #cf63dc, #b35cdc, #9356dc);
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 35px;
+  line-height: 1.2em;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-bottom: 30px;
+}
+
 header {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
   padding: 6px;
@@ -699,7 +711,7 @@ figure {
   height: 250px;
 }
 figure img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -711,7 +723,7 @@ figure img {
   border-top-right-radius: 30px;
   margin-top: -60px;
   z-index: 1;
-  padding: 30px 20px;
+  padding: 0 20px 40px;
 }
 #menu div {
   display: flex;
@@ -719,12 +731,12 @@ figure img {
 }
 #menu div h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 #menu div i {
-  margin-top: 25px;
-  margin-right: 20px;
-  font-size: 30px;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 25px;
 }
 #menu div i:hover {
   animation: fill 1s ease-out;
@@ -733,6 +745,10 @@ figure img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+#menu div > a {
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 #menu #entree,
 #menu #dish,
@@ -743,8 +759,10 @@ figure img {
 #menu #dish h2,
 #menu #dessert h2 {
   border-bottom: 4px solid #99E2D0;
-  width: 70px;
+  width: 50px;
   margin-bottom: 20px;
+  font-weight: lighter;
+  font-size: 1.2em;
 }
 #menu #entree article,
 #menu #dish article,
@@ -762,14 +780,14 @@ figure img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 10px;
+  padding: 10px 10px;
 }
 #menu #entree article div p,
 #menu #dish article div p,
 #menu #dessert article div p {
   color: #353535;
   font-size: 0.9em;
-  margin-bottom: 10px;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 #menu #entree article strong,
@@ -777,7 +795,7 @@ figure img {
 #menu #dessert article strong {
   position: absolute;
   right: 24px;
-  bottom: 20%;
+  bottom: 15%;
   font-weight: bold;
   font-size: 0.9em;
 }
@@ -788,16 +806,11 @@ figure img {
 }
 
 @media screen and (min-width: 768px) {
-  #entree article {
-    width: 50%;
-  }
-
-  #dish article {
-    width: 50%;
-  }
-
-  #dessert article {
-    width: 50%;
+  #menu #entree,
+#menu #dish,
+#menu #dessert {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 
