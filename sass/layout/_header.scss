@@ -9,6 +9,10 @@ header {
   a:first-of-type {
     position: relative;
     left: 20px;
+    i{
+      font-weight: bold;
+      font-size: 1.2em;
+    }
   }
   a:last-of-type {
     margin: 0 auto;

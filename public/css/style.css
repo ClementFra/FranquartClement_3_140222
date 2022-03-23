@@ -458,6 +458,10 @@ header a:first-of-type {
   position: relative;
   left: 20px;
 }
+header a:first-of-type i {
+  font-weight: bold;
+  font-size: 1.2em;
+}
 header a:last-of-type {
   margin: 0 auto;
 }
@@ -730,7 +734,7 @@ figure img {
   justify-content: space-between;
 }
 #menu div h1 {
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Shrikhand", cursive;
   font-size: 1.5em;
 }
 #menu div i {
@@ -781,23 +785,35 @@ figure img {
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#menu #entree article div h4,
+#menu #dish article div h4,
+#menu #dessert article div h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #menu #entree article div p,
 #menu #dish article div p,
 #menu #dessert article div p {
   color: #353535;
-  font-size: 0.9em;
+  font-weight: lighter;
+  font-size: 0.82em;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#menu #entree article strong,
-#menu #dish article strong,
-#menu #dessert article strong {
+#menu #entree article p strong,
+#menu #dish article p strong,
+#menu #dessert article p strong {
   position: absolute;
-  right: 24px;
-  bottom: 15%;
+  right: 15px;
+  bottom: 20%;
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 0.82em;
 }
 #menu #entree article i,
 #menu #dish article i,
