@@ -14,7 +14,7 @@ figure {
   border-top-right-radius: 30px;
   margin-top: -60px;
   z-index: 1;
-  padding: 0 20px 40px;
+  padding: 0 10px 40px;
   div {
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,6 @@ figure {
   #entree,
   #dish,
   #dessert {
-    padding: 10px 0;
     h2 {
       border-bottom: 4px solid $color_ter;
       width: 50px;
@@ -97,6 +96,11 @@ figure {
   }
 }
 @media screen and (min-width: 768px) {
+  figure{
+    img{
+      object-position: 20% 75% ;
+    }
+  }
   #menu {
     #entree,
     #dish,
