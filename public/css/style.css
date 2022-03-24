@@ -830,24 +830,25 @@ footer div i.fas {
 
   #menu #entree,
 #menu #dish,
-#menu #dessert {
+#menu #dessert, #menu > div {
     width: 70%;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
-  #menu_image img {
-    object-position: 50% 55%;
+  #menu_image {
+    height: 350px;
   }
 
   #menu {
-    margin-top: -20px;
+    max-width: 992px;
+    margin: 0 auto;
+    margin-top: -85px;
   }
   #menu #entree,
 #menu #dish,
-#menu #dessert {
-    display: flex;
-    flex-wrap: wrap;
+#menu #dessert, #menu > div {
+    width: 90%;
   }
 }
 

@@ -100,12 +100,13 @@
   #menu_image {
     img {
       object-position: 20% 75%;
+      
     }
   }
-  #menu {
+  #menu{
     #entree,
     #dish,
-    #dessert {
+    #dessert, > div {
       width: 70%;
       margin: 0 auto;
     }
@@ -113,17 +114,16 @@
 }
 @media screen and (min-width: 1200px) {
   #menu_image {
-    img {
-      object-position: 50% 55%;
-    }
+      height: 350px;
   }
-  #menu {
-    margin-top: -20px;
+  #menu{
+    max-width: 992px;
+    margin: 0 auto;
+    margin-top: -85px;
     #entree,
     #dish,
-    #dessert {
-      display: flex;
-      flex-wrap: wrap;
+    #dessert, > div {
+      width: 90%;
     }
   }
 }
