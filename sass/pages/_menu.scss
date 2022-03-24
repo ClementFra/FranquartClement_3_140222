@@ -14,7 +14,7 @@
   border-top-right-radius: 30px;
   margin-top: -60px;
   z-index: 1;
-  padding: 0 10px 40px;
+  padding: 15px;
   div {
     display: flex;
     justify-content: space-between;
@@ -38,15 +38,18 @@
   }
   div > a {
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
   }
 
   #entree,
   #dish,
   #dessert {
+    margin-top: 15px;
     h2 {
-      border-bottom: 4px solid $color_ter;
+      border-bottom: 3px solid $color_ter;
       width: 50px;
+      padding-bottom: 5px ;
       margin-bottom: 20px;
       font-weight: lighter;
       font-size: 1.2em;
@@ -75,7 +78,7 @@
         p {
           color: $color_lite_black;
           font-weight: lighter;
-          font-size: 0.82em;
+          font-size: 0.9em;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -84,7 +87,7 @@
       > p {
         align-self: flex-end;
         font-weight: bold;
-        font-size: 0.82em;
+        font-size: 0.9em;
         padding: 0 20px 10px 0;
       }
       i {

@@ -727,7 +727,7 @@ footer div i.fas {
   border-top-right-radius: 30px;
   margin-top: -60px;
   z-index: 1;
-  padding: 0 10px 40px;
+  padding: 15px;
 }
 #menu div {
   display: flex;
@@ -752,13 +752,20 @@ footer div i.fas {
 }
 #menu div > a {
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+#menu #entree,
+#menu #dish,
+#menu #dessert {
+  margin-top: 15px;
 }
 #menu #entree h2,
 #menu #dish h2,
 #menu #dessert h2 {
-  border-bottom: 4px solid #99E2D0;
+  border-bottom: 3px solid #99E2D0;
   width: 50px;
+  padding-bottom: 5px;
   margin-bottom: 20px;
   font-weight: lighter;
   font-size: 1.2em;
@@ -797,7 +804,7 @@ footer div i.fas {
 #menu #dessert article div p {
   color: #353535;
   font-weight: lighter;
-  font-size: 0.82em;
+  font-size: 0.9em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -807,7 +814,7 @@ footer div i.fas {
 #menu #dessert article > p {
   align-self: flex-end;
   font-weight: bold;
-  font-size: 0.82em;
+  font-size: 0.9em;
   padding: 0 20px 10px 0;
 }
 #menu #entree article i,
