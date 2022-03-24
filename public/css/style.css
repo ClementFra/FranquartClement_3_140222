@@ -828,5 +828,10 @@ figure img {
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  figure img {
+    object-position: 50% 55%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
