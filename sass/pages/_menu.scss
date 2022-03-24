@@ -1,4 +1,4 @@
-figure {
+#menu_image {
   margin: 0;
   height: 250px;
   img {
@@ -54,6 +54,7 @@ figure {
     article {
       position: relative;
       display: flex;
+      justify-content: space-between;
       background-color: $color_back;
       border-radius: 15px;
       margin-bottom: 20px;
@@ -80,14 +81,11 @@ figure {
           text-overflow: ellipsis;
         }
       }
-      p {
-        strong {
-          position: absolute;
-          right: 15px;
-          bottom: 20%;
-          font-weight: bold;
-          font-size: 0.82em;
-        }
+      > p {
+        align-self: flex-end;
+        font-weight: bold;
+        font-size: 0.82em;
+        padding: 0 20px 10px 0;
       }
       i {
         display: none;
@@ -96,9 +94,9 @@ figure {
   }
 }
 @media screen and (min-width: 768px) {
-  figure{
-    img{
-      object-position: 20% 75% ;
+  #menu_image {
+    img {
+      object-position: 20% 75%;
     }
   }
   #menu {
@@ -111,9 +109,18 @@ figure {
   }
 }
 @media screen and (min-width: 1200px) {
-  figure{
-    img{
+  #menu_image {
+    img {
       object-position: 50% 55%;
+    }
+  }
+  #menu {
+    margin-top: -20px;
+    #entree,
+    #dish,
+    #dessert {
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 }

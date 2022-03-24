@@ -710,11 +710,11 @@ footer div i.fas {
     flex-basis: 23%;
   }
 }
-figure {
+#menu_image {
   margin: 0;
   height: 250px;
 }
-figure img {
+#menu_image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -768,6 +768,7 @@ figure img {
 #menu #dessert article {
   position: relative;
   display: flex;
+  justify-content: space-between;
   background-color: #fff;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -801,14 +802,13 @@ figure img {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-#menu #entree article p strong,
-#menu #dish article p strong,
-#menu #dessert article p strong {
-  position: absolute;
-  right: 15px;
-  bottom: 20%;
+#menu #entree article > p,
+#menu #dish article > p,
+#menu #dessert article > p {
+  align-self: flex-end;
   font-weight: bold;
   font-size: 0.82em;
+  padding: 0 20px 10px 0;
 }
 #menu #entree article i,
 #menu #dish article i,
@@ -817,7 +817,7 @@ figure img {
 }
 
 @media screen and (min-width: 768px) {
-  figure img {
+  #menu_image img {
     object-position: 20% 75%;
   }
 
@@ -829,8 +829,18 @@ figure img {
   }
 }
 @media screen and (min-width: 1200px) {
-  figure img {
+  #menu_image img {
     object-position: 50% 55%;
+  }
+
+  #menu {
+    margin-top: -20px;
+  }
+  #menu #entree,
+#menu #dish,
+#menu #dessert {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
