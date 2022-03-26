@@ -3,12 +3,23 @@ header {
   padding: 6px;
   text-align: center;
   position: relative;
-  a{
-    display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a:first-of-type {
+    position: relative;
+    left: 20px;
+    i{
+      font-weight: bold;
+      font-size: 1.2em;
+    }
   }
-  img{
-    width: 170px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  a:last-of-type {
+    margin: 0 auto;
+    img {
+      width: 170px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
   }
 }
