@@ -27,12 +27,7 @@
       margin-right: 10px;
       font-size: 25px;
       &:hover {
-        animation: fill 1s ease-out;
-        background-image: linear-gradient($color_secondary, $color_primary);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: bold;
+        @include heart_animation;
       }
     }
   }

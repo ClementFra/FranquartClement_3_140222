@@ -670,6 +670,7 @@ footer div i.fas {
 }
 #restaurants > div figcaption i:hover {
   animation: fill 1s ease-out;
+  transition: all 0.7s;
   background-image: linear-gradient(#FF76DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
@@ -744,6 +745,7 @@ footer div i.fas {
 }
 #menu div i:hover {
   animation: fill 1s ease-out;
+  transition: all 0.7s;
   background-image: linear-gradient(#FF76DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
