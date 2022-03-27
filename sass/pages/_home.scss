@@ -1,5 +1,5 @@
 #search-bar {
-  background-color:$color_back_search;
+  background-color: $color_back_search;
   p {
     text-align: center;
     font-weight: bold;
@@ -148,10 +148,10 @@
           margin-bottom: 10px;
           margin-top: 10px;
         }
-        p{
+        p {
           font-weight: lighter;
           font-size: 1.2em;
-          margin-top: -10px ;
+          margin-top: -10px;
         }
       }
       i {
@@ -170,10 +170,49 @@
     }
   }
 }
+#loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disappear 200ms 3s forwards;
+}
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.spinner {
+  border-top: 16px solid $color_primary;
+  border-right: 16px solid $color_secondary;
+  border-bottom: 16px solid $color_ter;
+  border-left: 16px solid $color_primary_light;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 @media screen and (min-width: 768px) {
-  #steps > div{
-    ol{
+  #steps > div {
+    ol {
       width: 50%;
     }
   }
@@ -202,9 +241,9 @@
     }
   }
 }
-@media screen and (min-width: 1200px){
-  #restaurants > div{
-    article{
+@media screen and (min-width: 1200px) {
+  #restaurants > div {
+    article {
       flex-basis: 23%;
     }
   }
