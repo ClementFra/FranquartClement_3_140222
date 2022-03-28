@@ -1,5 +1,4 @@
 @mixin heart_animation{
-    animation: fill 1s ease-out;
     transition: all .7s;
     background-image: linear-gradient($color_secondary, $color_primary);
     background-clip: text;
