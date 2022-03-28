@@ -669,12 +669,15 @@ footer div i.fas {
   margin-top: 10px;
 }
 #restaurants > div figcaption i:hover {
-  transition: all 0.7s;
-  background-image: linear-gradient(#FF76DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+#restaurants > div figcaption i:hover:hover {
+  transition: all 300ms linear 0s;
+  opacity: 100%;
+  background-image: linear-gradient(#FF76DA, #9356DC);
 }
 
 @media screen and (min-width: 768px) {
@@ -743,12 +746,15 @@ footer div i.fas {
   font-size: 25px;
 }
 #menu div i:hover {
-  transition: all 0.7s;
-  background-image: linear-gradient(#FF76DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+#menu div i:hover:hover {
+  transition: all 300ms linear 0s;
+  opacity: 100%;
+  background-image: linear-gradient(#FF76DA, #9356DC);
 }
 #menu div > a {
   margin: 0 auto;
