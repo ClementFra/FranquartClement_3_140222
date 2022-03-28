@@ -172,8 +172,7 @@
 }
 #loader {
   position: fixed;
-  display: grid;
-  place-items: center;
+  padding: 100% 30% ;
   background-color: #ffffff;
   height: 100vh;
   inset: 0;
@@ -211,6 +210,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  #loader{
+    padding: 50% 40%;
+  }
   #steps > div {
     ol {
       width: 50%;
@@ -229,6 +231,9 @@
   }
 }
 @media screen and (min-width: 992px) {
+  #loader{
+    padding: 40% 45%;
+  }
   #steps > div {
     ol {
       flex-direction: row;
