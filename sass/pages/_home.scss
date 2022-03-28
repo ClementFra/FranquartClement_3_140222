@@ -247,6 +247,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  #loader{
+    padding: 20% 45%;
+  }
   #restaurants > div {
     article {
       flex-basis: 23%;
