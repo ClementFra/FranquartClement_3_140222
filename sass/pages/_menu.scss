@@ -49,7 +49,7 @@
     h2 {
       border-bottom: 3px solid $color_ter;
       width: 50px;
-      padding-bottom: 5px ;
+      padding-bottom: 5px;
       margin-bottom: 20px;
       font-weight: lighter;
       font-size: 1.2em;
@@ -62,6 +62,23 @@
       border-radius: 15px;
       margin-bottom: 20px;
       box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
+      animation: appear 1s ;
+      animation-fill-mode: both;
+      @for $i from 1 through 3 {
+        &:nth-of-type(#{$i}) {
+          animation-delay: 100ms * $i;
+        }
+      }
+      @keyframes appear {
+        0% {
+          transform: translateY(50%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
       div {
         display: flex;
         flex-direction: column;
@@ -100,13 +117,13 @@
   #menu_image {
     img {
       object-position: 20% 75%;
-      
     }
   }
-  #menu{
+  #menu {
     #entree,
     #dish,
-    #dessert, > div {
+    #dessert,
+    > div {
       width: 70%;
       margin: 0 auto;
     }
@@ -114,15 +131,16 @@
 }
 @media screen and (min-width: 1200px) {
   #menu_image {
-      height: 350px;
+    height: 350px;
   }
-  #menu{
+  #menu {
     max-width: 992px;
     margin: 0 auto;
     margin-top: -85px;
     #entree,
     #dish,
-    #dessert, > div {
+    #dessert,
+    > div {
       width: 90%;
     }
   }
