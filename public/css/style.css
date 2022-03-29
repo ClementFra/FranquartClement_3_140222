@@ -820,7 +820,13 @@ footer div i.fas {
 #menu #entree article i,
 #menu #dish article i,
 #menu #dessert article i {
-  display: none;
+  background-color: #99E2D0;
+  color: white;
+  width: 50px;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -830,7 +836,8 @@ footer div i.fas {
 
   #menu #entree,
 #menu #dish,
-#menu #dessert, #menu > div {
+#menu #dessert,
+#menu > div {
     width: 70%;
     margin: 0 auto;
   }
@@ -847,7 +854,8 @@ footer div i.fas {
   }
   #menu #entree,
 #menu #dish,
-#menu #dessert, #menu > div {
+#menu #dessert,
+#menu > div {
     width: 90%;
   }
 }

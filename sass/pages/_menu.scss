@@ -49,7 +49,7 @@
     h2 {
       border-bottom: 3px solid $color_ter;
       width: 50px;
-      padding-bottom: 5px ;
+      padding-bottom: 5px;
       margin-bottom: 20px;
       font-weight: lighter;
       font-size: 1.2em;
@@ -91,7 +91,13 @@
         padding: 0 20px 10px 0;
       }
       i {
-        display: none;
+        background-color: $color_ter;
+        color: white;
+        width: 50px;
+        border-radius: 0 15px 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
@@ -100,13 +106,13 @@
   #menu_image {
     img {
       object-position: 20% 75%;
-      
     }
   }
-  #menu{
+  #menu {
     #entree,
     #dish,
-    #dessert, > div {
+    #dessert,
+    > div {
       width: 70%;
       margin: 0 auto;
     }
@@ -114,15 +120,16 @@
 }
 @media screen and (min-width: 1200px) {
   #menu_image {
-      height: 350px;
+    height: 350px;
   }
-  #menu{
+  #menu {
     max-width: 992px;
     margin: 0 auto;
     margin-top: -85px;
     #entree,
     #dish,
-    #dessert, > div {
+    #dessert,
+    > div {
       width: 90%;
     }
   }
