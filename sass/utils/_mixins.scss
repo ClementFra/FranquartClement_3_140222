@@ -4,8 +4,7 @@
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   &:hover {
-    transition: all 300ms linear 0s;
-    opacity: 100%;
-    background-image: linear-gradient($color_secondary, $color_primary);
+    transition: all 2s;
+    background-image: linear-gradient(0deg,$color_primary, $color_secondary);
   }
 }
