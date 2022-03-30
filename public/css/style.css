@@ -780,7 +780,7 @@ footer div i.fas {
   border-radius: 15px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
-  animation: appear 1s;
+  animation: appear 2s;
   animation-fill-mode: both;
 }
 #menu #entree article:nth-of-type(1),
