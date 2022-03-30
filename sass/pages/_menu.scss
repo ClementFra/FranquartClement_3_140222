@@ -90,15 +90,18 @@
         font-size: 0.9em;
         padding: 0 20px 10px 0;
       }
-
-      i {
+      #icon {
+        overflow: hidden;
         background-color: $color_ter;
-        color: white;
-        width: 50px;
         border-radius: 0 15px 15px 0;
-        display: flex;
         align-items: center;
-        justify-content: center;
+        padding-top: 15px;
+        span {
+          display: inline-block;
+          color: white;
+          font-size: 25px;
+        }
+        
       }
     }
   }
