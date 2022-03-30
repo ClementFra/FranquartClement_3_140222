@@ -172,13 +172,15 @@
 }
 #loader {
   position: fixed;
-  padding: 100% 32% ;
   background-color: #ffffff;
   height: 100vh;
   inset: 0;
   z-index: 1;
   opacity: 0.9;
   animation: disappear 200ms 3s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   div {
     border-top: 16px solid $color_primary;
     border-right: 16px solid $color_secondary;
@@ -209,9 +211,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  #loader{
-    padding: 70% 42%;
-  }
   #steps > div {
     ol {
       width: 50%;
@@ -230,9 +229,6 @@
   }
 }
 @media screen and (min-width: 992px) {
-  #loader{
-    padding: 45% 45%;
-  }
   #steps > div {
     ol {
       flex-direction: row;
@@ -246,17 +242,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  #loader{
-    padding: 40% 45%;
-  }
   #restaurants > div {
     article {
       flex-basis: 23%;
     }
-  }
-}
-@media screen and (min-width: 1900px){
-  #loader{
-    padding: 25% 48%;
   }
 }
