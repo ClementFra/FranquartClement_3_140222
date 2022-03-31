@@ -780,23 +780,10 @@ footer div i.fas {
   border-radius: 15px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
-  animation: appear 2s;
-  animation-fill-mode: backwards;
-}
-#menu #entree article:nth-of-type(1),
-#menu #dish article:nth-of-type(1),
-#menu #dessert article:nth-of-type(1) {
-  animation-delay: 100ms;
-}
-#menu #entree article:nth-of-type(2),
-#menu #dish article:nth-of-type(2),
-#menu #dessert article:nth-of-type(2) {
-  animation-delay: 200ms;
-}
-#menu #entree article:nth-of-type(3),
-#menu #dish article:nth-of-type(3),
-#menu #dessert article:nth-of-type(3) {
-  animation-delay: 300ms;
+  animation-name: appear;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
 }
 @keyframes appear {
   0% {
@@ -848,6 +835,33 @@ footer div i.fas {
 #menu #dish article i,
 #menu #dessert article i {
   display: none;
+}
+#menu #entree article:nth-of-type(1) {
+  animation-delay: 250ms;
+}
+#menu #entree article:nth-of-type(2) {
+  animation-delay: 500ms;
+}
+#menu #entree article:nth-of-type(3) {
+  animation-delay: 750ms;
+}
+#menu #dish article:nth-of-type(1) {
+  animation-delay: 1000ms;
+}
+#menu #dish article:nth-of-type(2) {
+  animation-delay: 2000ms;
+}
+#menu #dish article:nth-of-type(3) {
+  animation-delay: 3000ms;
+}
+#menu #dessert article:nth-of-type(1) {
+  animation-delay: 4000ms;
+}
+#menu #dessert article:nth-of-type(2) {
+  animation-delay: 8000ms;
+}
+#menu #dessert article:nth-of-type(3) {
+  animation-delay: 12000ms;
 }
 
 @media screen and (min-width: 768px) {
