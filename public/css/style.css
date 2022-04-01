@@ -701,11 +701,9 @@ footer div i.fas {
 }
 
 @keyframes disappear {
-  0% {
-    transform: scale(1);
-  }
   100% {
-    transform: scale(0);
+    opacity: 0;
+    display: none;
   }
 }
 @keyframes spin {
