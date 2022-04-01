@@ -433,6 +433,7 @@ ol {
   margin-bottom: 30px;
 }
 .btn:hover {
+  transition: 300ms;
   opacity: 0.9;
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
 }
