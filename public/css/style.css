@@ -703,7 +703,7 @@ footer div i.fas {
 @keyframes disappear {
   100% {
     opacity: 0;
-    display: none;
+    z-index: -1000;
   }
 }
 @keyframes spin {
