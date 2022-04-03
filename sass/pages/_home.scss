@@ -161,7 +161,7 @@
         position: relative;
         z-index: 1;
         overflow: hidden;
-        &::before {
+        &::after {
           position: absolute;
           z-index: -1;
           content: "";
@@ -176,7 +176,7 @@
           );
           transition: all 2s;
         }
-        &:hover::before {
+        &:hover::after {
          top: 0;
         }
       }
