@@ -680,15 +680,17 @@ footer div i.fas {
   height: 52%;
   left: 0;
   bottom: 0;
-  border-bottom-left-radius: 75%;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
-  border-bottom-right-radius: 75%;
   background-image: linear-gradient(0deg, #9356DC, #FF76DA);
   transition: all 2s;
 }
 #restaurants > div figcaption i:hover::after {
+  content: "";
+  position: absolute;
   top: 0;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
 }
 
 #loader {
@@ -698,7 +700,7 @@ footer div i.fas {
   inset: 0;
   z-index: 1;
   opacity: 0.9;
-  animation: disappear 200ms 3s forwards;
+  animation: disappear 200ms 1s forwards;
   display: flex;
   align-items: center;
   justify-content: center;
