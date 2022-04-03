@@ -169,6 +169,11 @@
           width: 90%;
           height: 52%;
           left: 0;
+          bottom: 0;
+          border-bottom-left-radius: 75%;
+          border-top-left-radius:100%;
+          border-top-right-radius: 100%;
+          border-bottom-right-radius: 75%;
           background-image: linear-gradient(
             0deg,
             $color_primary,
