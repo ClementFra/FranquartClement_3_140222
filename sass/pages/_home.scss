@@ -158,9 +158,6 @@
         font-size: 23px;
         margin-right: 20px;
         margin-top: 10px;
-        position: relative;
-        z-index: 0;
-        overflow: hidden;
         &:hover{
          @include heart_animation
         }
