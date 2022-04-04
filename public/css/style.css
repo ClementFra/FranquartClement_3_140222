@@ -776,6 +776,7 @@ footer div i.fas {
   position: relative;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
   background-color: #fff;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -789,7 +790,6 @@ footer div i.fas {
   justify-content: space-between;
   padding: 10px 10px;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
 }
 #menu #entree article div h4,
@@ -820,11 +820,26 @@ footer div i.fas {
 #menu #entree article #icon,
 #menu #dish article #icon,
 #menu #dessert article #icon {
-  overflow: hidden;
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
+  height: auto;
   align-items: center;
   padding-top: 15px;
+  margin-right: -1;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+#menu #entree article #icon:hover,
+#menu #dish article #icon:hover,
+#menu #dessert article #icon:hover {
+  animation: slide 2s;
+  margin-right: 1;
 }
 #menu #entree article #icon span,
 #menu #dish article #icon span,
@@ -832,6 +847,13 @@ footer div i.fas {
   display: inline-block;
   color: white;
   font-size: 25px;
+  transform: rotate(360deg);
+  transition: 0.4s ease-in-out;
+}
+#menu #entree article #icon span:hover,
+#menu #dish article #icon span:hover,
+#menu #dessert article #icon span:hover {
+  transform: rotate(0deg);
 }
 
 @media screen and (min-width: 768px) {
