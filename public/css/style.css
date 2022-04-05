@@ -786,7 +786,7 @@ footer div i.fas {
 #menu #entree article:hover #icon,
 #menu #dish article:hover #icon,
 #menu #dessert article:hover #icon {
-  margin-right: 0.2px;
+  margin-right: 0;
 }
 #menu #entree article:hover span,
 #menu #dish article:hover span,
@@ -806,7 +806,7 @@ footer div i.fas {
 #menu #dessert article div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
   padding: 10px 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -841,15 +841,14 @@ footer div i.fas {
 #menu #dessert article #icon {
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
-  height: auto;
   align-items: center;
+  width: auto;
   padding-top: 15px;
   margin-right: -45px;
 }
 #menu #entree article #icon span,
 #menu #dish article #icon span,
 #menu #dessert article #icon span {
-  display: inline-block;
   color: white;
   font-size: 25px;
 }
