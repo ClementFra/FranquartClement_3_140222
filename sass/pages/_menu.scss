@@ -58,31 +58,34 @@
       position: relative;
       display: flex;
       justify-content: space-between;
+      overflow: hidden;
       background-color: $color_back;
       border-radius: 15px;
       margin-bottom: 20px;
       box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
-      animation-name: appear;
-      animation-duration: 3000ms;
-      animation-timing-function: ease-out;
-      animation-fill-mode: both;
-      @keyframes appear {
-        0% {
-          transform: translateY(50%);
-          opacity: 0;
+      transition: margin-right 1s;
+      &:hover {
+        #icon {
+          margin-right: 0;
         }
-        100% {
-          transform: translateY(0);
-          opacity: 1;
+        span {
+          animation: spin 1s;
+        }
+        @keyframes spin {
+          0% {
+            transform: rotate(360deg);
+          }
+          100% {
+            transform: rotate(0deg);
+          }
         }
       }
       div {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        width: 100%;
         padding: 10px 10px;
         white-space: nowrap;
-        overflow: hidden;
         text-overflow: ellipsis;
         h4 {
           white-space: nowrap;
@@ -104,29 +107,17 @@
         font-size: 0.9em;
         padding: 0 20px 10px 0;
       }
-      i {
-        display: none;
-      }
-    }
-  }
-  #entree article {
-    @for $i from 1 through 3 {
-      &:nth-of-type(#{$i}) {
-        animation-delay: 250ms * $i;
-      }
-    }
-  }
-  #dish article {
-    @for $i from 1 through 3 {
-      &:nth-of-type(#{$i}) {
-        animation-delay: 1000ms * $i;
-      }
-    }
-  }
-  #dessert article {
-    @for $i from 1 through 3 {
-      &:nth-of-type(#{$i}) {
-        animation-delay: 3250ms * $i;
+      #icon {
+        background-color: $color_ter;
+        border-radius: 0 15px 15px 0;
+        align-items: center;
+        width: auto;
+        padding-top: 15px;
+        margin-right: -45px;
+        span {
+          color: white;
+          font-size: 25px;
+        }
       }
     }
   }

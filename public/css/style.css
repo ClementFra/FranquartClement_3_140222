@@ -776,23 +776,29 @@ footer div i.fas {
   position: relative;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
   background-color: #fff;
   border-radius: 15px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
-  animation-name: appear;
-  animation-duration: 3000ms;
-  animation-timing-function: ease-out;
-  animation-fill-mode: both;
+  transition: margin-right 1s;
 }
-@keyframes appear {
+#menu #entree article:hover #icon,
+#menu #dish article:hover #icon,
+#menu #dessert article:hover #icon {
+  margin-right: 0;
+}
+#menu #entree article:hover span,
+#menu #dish article:hover span,
+#menu #dessert article:hover span {
+  animation: spin 1s;
+}
+@keyframes spin {
   0% {
-    transform: translateY(50%);
-    opacity: 0;
+    transform: rotate(360deg);
   }
   100% {
-    transform: translateY(0);
-    opacity: 1;
+    transform: rotate(0deg);
   }
 }
 #menu #entree article div,
@@ -800,10 +806,9 @@ footer div i.fas {
 #menu #dessert article div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
   padding: 10px 10px;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
 }
 #menu #entree article div h4,
@@ -831,37 +836,21 @@ footer div i.fas {
   font-size: 0.9em;
   padding: 0 20px 10px 0;
 }
-#menu #entree article i,
-#menu #dish article i,
-#menu #dessert article i {
-  display: none;
+#menu #entree article #icon,
+#menu #dish article #icon,
+#menu #dessert article #icon {
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  align-items: center;
+  width: auto;
+  padding-top: 15px;
+  margin-right: -45px;
 }
-#menu #entree article:nth-of-type(1) {
-  animation-delay: 250ms;
-}
-#menu #entree article:nth-of-type(2) {
-  animation-delay: 500ms;
-}
-#menu #entree article:nth-of-type(3) {
-  animation-delay: 750ms;
-}
-#menu #dish article:nth-of-type(1) {
-  animation-delay: 1000ms;
-}
-#menu #dish article:nth-of-type(2) {
-  animation-delay: 2000ms;
-}
-#menu #dish article:nth-of-type(3) {
-  animation-delay: 3000ms;
-}
-#menu #dessert article:nth-of-type(1) {
-  animation-delay: 3250ms;
-}
-#menu #dessert article:nth-of-type(2) {
-  animation-delay: 6500ms;
-}
-#menu #dessert article:nth-of-type(3) {
-  animation-delay: 9750ms;
+#menu #entree article #icon span,
+#menu #dish article #icon span,
+#menu #dessert article #icon span {
+  color: white;
+  font-size: 25px;
 }
 
 @media screen and (min-width: 768px) {
