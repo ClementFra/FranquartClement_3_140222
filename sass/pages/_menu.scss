@@ -69,14 +69,14 @@
           margin-right: 0;
         }
         span {
-          animation: spin 1s;
+          animation: spin 1250ms;
         }
         @keyframes spin {
           0% {
-            transform: rotate(360deg);
+            transform: rotate(0deg);
           }
           100% {
-            transform: rotate(0deg);
+            transform: rotate(360deg);
           }
         }
       }
@@ -105,13 +105,12 @@
         align-self: flex-end;
         font-weight: bold;
         font-size: 0.9em;
-        padding: 0 20px 10px 0;
+        margin: 0 20px 10px 0;
       }
       #icon {
         background-color: $color_ter;
         border-radius: 0 15px 15px 0;
         align-items: center;
-        width: auto;
         padding-top: 15px;
         margin-right: -45px;
         span {
