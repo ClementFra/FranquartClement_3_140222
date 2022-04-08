@@ -91,9 +91,11 @@
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+          width: 90%;
         }
         p {
           color: $color_lite_black;
+          width: 90%;
           font-weight: lighter;
           font-size: 0.9em;
           white-space: nowrap;
@@ -111,6 +113,7 @@
         background-color: $color_ter;
         border-radius: 0 15px 15px 0;
         align-items: center;
+        width: auto;
         padding-top: 15px;
         margin-right: -45px;
         span {
