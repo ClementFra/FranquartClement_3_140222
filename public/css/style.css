@@ -781,7 +781,6 @@ footer div i.fas {
   border-radius: 15px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
-  transition: margin-right 1s;
 }
 #menu #entree article:hover #icon,
 #menu #dish article:hover #icon,
@@ -791,7 +790,7 @@ footer div i.fas {
 #menu #entree article:hover span,
 #menu #dish article:hover span,
 #menu #dessert article:hover span {
-  animation: spin 1250ms;
+  animation: spin 500ms;
 }
 @keyframes spin {
   0% {
@@ -810,6 +809,7 @@ footer div i.fas {
   padding: 10px 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 #menu #entree article div h4,
 #menu #dish article div h4,
@@ -836,7 +836,7 @@ footer div i.fas {
   align-self: flex-end;
   font-weight: bold;
   font-size: 0.9em;
-  margin: 0 20px 10px 0;
+  margin: 0 15px 10px 0;
 }
 #menu #entree article #icon,
 #menu #dish article #icon,
@@ -844,9 +844,10 @@ footer div i.fas {
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   align-items: center;
-  width: auto;
+  width: 60px;
   padding-top: 15px;
-  margin-right: -45px;
+  margin-right: -55px;
+  transition: all 500ms;
 }
 #menu #entree article #icon span,
 #menu #dish article #icon span,
