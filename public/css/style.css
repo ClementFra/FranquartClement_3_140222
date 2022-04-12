@@ -806,21 +806,40 @@ footer div i.fas {
   position: relative;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
   background-color: #fff;
   border-radius: 15px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
+}
+#menu #entree article:hover #icon,
+#menu #dish article:hover #icon,
+#menu #dessert article:hover #icon {
+  margin-right: 0;
+}
+#menu #entree article:hover span,
+#menu #dish article:hover span,
+#menu #dessert article:hover span {
+  animation: spin 500ms;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 #menu #entree article div,
 #menu #dish article div,
 #menu #dessert article div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
   padding: 10px 10px;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 #menu #entree article div h4,
 #menu #dish article div h4,
@@ -828,11 +847,13 @@ footer div i.fas {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 90%;
 }
 #menu #entree article div p,
 #menu #dish article div p,
 #menu #dessert article div p {
   color: #353535;
+  width: 90%;
   font-weight: lighter;
   font-size: 0.9em;
   white-space: nowrap;
@@ -845,12 +866,24 @@ footer div i.fas {
   align-self: flex-end;
   font-weight: bold;
   font-size: 0.9em;
-  padding: 0 20px 10px 0;
+  margin: 0 15px 10px 0;
 }
-#menu #entree article i,
-#menu #dish article i,
-#menu #dessert article i {
-  display: none;
+#menu #entree article #icon,
+#menu #dish article #icon,
+#menu #dessert article #icon {
+  background-color: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  align-items: center;
+  width: 60px;
+  padding-top: 15px;
+  margin-right: -55px;
+  transition: all 500ms;
+}
+#menu #entree article #icon span,
+#menu #dish article #icon span,
+#menu #dessert article #icon span {
+  color: white;
+  font-size: 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -860,7 +893,8 @@ footer div i.fas {
 
   #menu #entree,
 #menu #dish,
-#menu #dessert, #menu > div {
+#menu #dessert,
+#menu > div {
     width: 70%;
     margin: 0 auto;
   }
@@ -877,7 +911,8 @@ footer div i.fas {
   }
   #menu #entree,
 #menu #dish,
-#menu #dessert, #menu > div {
+#menu #dessert,
+#menu > div {
     width: 90%;
   }
 }

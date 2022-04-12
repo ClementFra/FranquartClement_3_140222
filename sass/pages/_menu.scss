@@ -49,7 +49,7 @@
     h2 {
       border-bottom: 3px solid $color_ter;
       width: 50px;
-      padding-bottom: 5px ;
+      padding-bottom: 5px;
       margin-bottom: 20px;
       font-weight: lighter;
       font-size: 1.2em;
@@ -58,25 +58,45 @@
       position: relative;
       display: flex;
       justify-content: space-between;
+      overflow: hidden;
       background-color: $color_back;
       border-radius: 15px;
       margin-bottom: 20px;
       box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
+      
+      &:hover {
+        #icon {
+          margin-right: 0;
+        }
+        span {
+          animation: spin 500ms;
+        }
+        @keyframes spin {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
       div {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        width: 100%;
         padding: 10px 10px;
         white-space: nowrap;
-        overflow: hidden;
         text-overflow: ellipsis;
+        overflow: hidden;
         h4 {
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+          width: 90%;
         }
         p {
           color: $color_lite_black;
+          width: 90%;
           font-weight: lighter;
           font-size: 0.9em;
           white-space: nowrap;
@@ -88,10 +108,20 @@
         align-self: flex-end;
         font-weight: bold;
         font-size: 0.9em;
-        padding: 0 20px 10px 0;
+        margin: 0 15px 10px 0;
       }
-      i {
-        display: none;
+      #icon {
+        background-color: $color_ter;
+        border-radius: 0 15px 15px 0;
+        align-items: center;
+        width: 60px;
+        padding-top: 15px;
+        margin-right: -55px;
+        transition: all 500ms;
+        span {
+          color: white;
+          font-size: 25px;
+        }
       }
     }
   }
@@ -100,13 +130,13 @@
   #menu_image {
     img {
       object-position: 20% 75%;
-      
     }
   }
-  #menu{
+  #menu {
     #entree,
     #dish,
-    #dessert, > div {
+    #dessert,
+    > div {
       width: 70%;
       margin: 0 auto;
     }
@@ -114,15 +144,16 @@
 }
 @media screen and (min-width: 1200px) {
   #menu_image {
-      height: 350px;
+    height: 350px;
   }
-  #menu{
+  #menu {
     max-width: 992px;
     margin: 0 auto;
     margin-top: -85px;
     #entree,
     #dish,
-    #dessert, > div {
+    #dessert,
+    > div {
       width: 90%;
     }
   }
