@@ -811,6 +811,36 @@ footer div i.fas {
   border-radius: 15px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
+  animation: appear 0.8s both;
+  transition: margin-right 1s;
+}
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#menu #entree article:hover #icon,
+#menu #dish article:hover #icon,
+#menu #dessert article:hover #icon {
+  margin-right: 0;
+}
+#menu #entree article:hover span,
+#menu #dish article:hover span,
+#menu #dessert article:hover span {
+  animation: spin 1s;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 #menu #entree article:hover #icon,
 #menu #dish article:hover #icon,
@@ -874,6 +904,7 @@ footer div i.fas {
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   align-items: center;
+
   width: 60px;
   padding-top: 15px;
   margin-right: -55px;
