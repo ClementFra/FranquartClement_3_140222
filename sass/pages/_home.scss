@@ -160,31 +160,14 @@
         margin-top: 10px;
         position: relative;
         z-index: 1;
-        &::after {
-          position: absolute;
-          z-index: -1;
-          content: '';
-          top: 10px;
-          width: 87%;
-          height: 49%;
-          left: 0;
-          border-radius: 50%;
-          background-image: linear-gradient(
-            0deg,
-            $color_primary,
-            $color_secondary
-          );
-          transition: all 2s;
-          opacity: 0;
-          
+        
+        &:hover::before {
+          font-weight: 900;
+          background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to($color-secondary));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
-        &:hover::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          border-radius: 50%;
-          opacity: 1;
-        }
+        
       }
     }
   }
