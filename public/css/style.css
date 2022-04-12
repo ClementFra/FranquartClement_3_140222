@@ -425,24 +425,17 @@ ol {
   color: white;
   padding: 15px;
   background-image: linear-gradient(to right bottom, #ff76da, #e86bdb, #cf63dc, #b35cdc, #9356dc);
-  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 35px;
   line-height: 1.2em;
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 30px;
 }
-
-.btn_2 {
-  color: white;
-  padding: 15px;
-  background-image: linear-gradient(to right bottom, #ff76da, #e86bdb, #cf63dc, #b35cdc, #9356dc);
-  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 35px;
-  line-height: 1.2em;
-  padding-left: 45px;
-  padding-right: 45px;
-  margin-bottom: 30px;
+.btn:hover {
+  transition: 300ms;
+  opacity: 0.9;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 header {
@@ -677,6 +670,43 @@ footer div i.fas {
   font-weight: bold;
 }
 
+#loader {
+  position: fixed;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disappear 200ms 1s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#loader div {
+  border-top: 16px solid #9356DC;
+  border-right: 16px solid #FF76DA;
+  border-bottom: 16px solid #99E2D0;
+  border-left: 16px solid #f5edff;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes disappear {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media screen and (min-width: 768px) {
   #steps > div ol {
     width: 50%;
@@ -812,6 +842,24 @@ footer div i.fas {
     transform: rotate(0deg);
   }
 }
+#menu #entree article:hover #icon,
+#menu #dish article:hover #icon,
+#menu #dessert article:hover #icon {
+  margin-right: 0;
+}
+#menu #entree article:hover span,
+#menu #dish article:hover span,
+#menu #dessert article:hover span {
+  animation: spin 500ms;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #menu #entree article div,
 #menu #dish article div,
 #menu #dessert article div {
@@ -821,6 +869,7 @@ footer div i.fas {
   padding: 10px 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 #menu #entree article div h4,
 #menu #dish article div h4,
@@ -828,11 +877,13 @@ footer div i.fas {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 90%;
 }
 #menu #entree article div p,
 #menu #dish article div p,
 #menu #dessert article div p {
   color: #353535;
+  width: 90%;
   font-weight: lighter;
   font-size: 0.9em;
   white-space: nowrap;
@@ -845,7 +896,7 @@ footer div i.fas {
   align-self: flex-end;
   font-weight: bold;
   font-size: 0.9em;
-  padding: 0 20px 10px 0;
+  margin: 0 15px 10px 0;
 }
 #menu #entree article #icon,
 #menu #dish article #icon,
@@ -853,60 +904,17 @@ footer div i.fas {
   background-color: #99E2D0;
   border-radius: 0 15px 15px 0;
   align-items: center;
-  width: auto;
+
+  width: 60px;
   padding-top: 15px;
-  margin-right: -45px;
+  margin-right: -55px;
+  transition: all 500ms;
 }
 #menu #entree article #icon span,
 #menu #dish article #icon span,
 #menu #dessert article #icon span {
   color: white;
   font-size: 25px;
-}
-#menu #entree .delay-0,
-#menu #dish .delay-0,
-#menu #dessert .delay-0 {
-  animation-delay: calc(0s);
-}
-#menu #entree .delay-1,
-#menu #dish .delay-1,
-#menu #dessert .delay-1 {
-  animation-delay: calc(0.1428571429s);
-}
-#menu #entree .delay-2,
-#menu #dish .delay-2,
-#menu #dessert .delay-2 {
-  animation-delay: calc(0.2857142857s);
-}
-#menu #entree .delay-3,
-#menu #dish .delay-3,
-#menu #dessert .delay-3 {
-  animation-delay: calc(0.4285714286s);
-}
-#menu #entree .delay-4,
-#menu #dish .delay-4,
-#menu #dessert .delay-4 {
-  animation-delay: calc(0.5714285714s);
-}
-#menu #entree .delay-5,
-#menu #dish .delay-5,
-#menu #dessert .delay-5 {
-  animation-delay: calc(0.7142857143s);
-}
-#menu #entree .delay-6,
-#menu #dish .delay-6,
-#menu #dessert .delay-6 {
-  animation-delay: calc(0.8571428571s);
-}
-#menu #entree .delay-7,
-#menu #dish .delay-7,
-#menu #dessert .delay-7 {
-  animation-delay: calc(1s);
-}
-#menu #entree .delay-8,
-#menu #dish .delay-8,
-#menu #dessert .delay-8 {
-  animation-delay: calc(1.1428571429s);
 }
 
 @media screen and (min-width: 768px) {
