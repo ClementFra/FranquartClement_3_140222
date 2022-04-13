@@ -670,11 +670,22 @@ footer div i.fas {
   position: relative;
   z-index: 1;
 }
-#restaurants > div figcaption i:hover::before {
+#restaurants > div figcaption i::after {
+  opacity: 0;
+  content: "\f004";
   font-weight: 900;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF76DA));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 17px;
+}
+#restaurants > div figcaption i:hover::after {
+  top: 0;
+  opacity: 1;
+  transition: all 1s;
+  z-index: -1;
 }
 
 #loader {
