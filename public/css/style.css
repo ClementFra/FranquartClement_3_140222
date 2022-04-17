@@ -678,14 +678,16 @@ footer div i.fas {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  right: 0;
-  top: 17px;
+  transition: all 1s linear 0s;
+  left: 0;
+  bottom: 48%;
+  width: 100%;
+  height: 0;
 }
 #restaurants > div figcaption i:hover::after {
-  top: 0;
-  opacity: 1;
-  transition: all 1s;
+  height: 50%;
   z-index: -1;
+  opacity: 1;
 }
 
 #loader {
