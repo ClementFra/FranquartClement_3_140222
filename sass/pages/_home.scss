@@ -160,6 +160,7 @@
         margin-top: 10px;
         position: relative;
         z-index: 1;
+        height: 90%;
         &::after {
           opacity: 0;
           content: "\f004";
@@ -174,14 +175,15 @@
           background-clip: text;
           -webkit-text-fill-color: transparent;
           position: absolute;
-          transition: all 1s linear 0s;
+          transition: all 1.5s linear 0s;
           left: 0;
-          bottom: 48%;
+          bottom: 15%;
           width: 100%;
           height: 0;
+         
         }
         &:hover::after {
-          height: 50%;
+          height: 80%;
           z-index: -1;
           opacity: 1;
         }
