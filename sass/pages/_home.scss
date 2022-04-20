@@ -153,22 +153,7 @@
           margin-top: -10px;
 
         }
-      }
-      i {
-        font-size: 23px;
-        margin-right: 20px;
-        margin-top: 10px;
-        &:hover {
-          animation: fill 1s ease-out;
-          background-image: linear-gradient($color_secondary, $color_primary);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font-weight: bold;
-
-        }
-      }
-      
+      } 
     }
   }
 }
@@ -216,21 +201,6 @@
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
-  }
-}
-@keyframes disappear {
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 
