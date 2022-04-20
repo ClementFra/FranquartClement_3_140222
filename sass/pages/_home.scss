@@ -88,7 +88,6 @@
     color: lightslategray;
   }
 }
-
 #restaurants {
   background-color: $color_back_lite;
   > div {
@@ -152,21 +151,9 @@
           font-weight: lighter;
           font-size: 1.2em;
           margin-top: -10px;
+
         }
-      }
-      i {
-        font-size: 23px;
-        margin-right: 20px;
-        margin-top: 10px;
-        &:hover {
-          animation: fill 1s ease-out;
-          background-image: linear-gradient($color_secondary, $color_primary);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font-weight: bold;
-        }
-      }
+      } 
     }
   }
 }
@@ -192,21 +179,31 @@
     animation: spin 2s linear infinite;
   }
 }
-@keyframes disappear {
-  100% {
-    opacity: 0;
-    z-index: -1;
+
+
+#loader {
+  position: fixed;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disappear 200ms 1s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div {
+    border-top: 16px solid $color_primary;
+    border-right: 16px solid $color_secondary;
+    border-bottom: 16px solid $color_ter;
+    border-left: 16px solid $color_primary_light;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
   }
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 @media screen and (min-width: 768px) {
   #steps > div {
