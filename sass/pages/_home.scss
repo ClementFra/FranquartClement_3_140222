@@ -154,39 +154,7 @@
           margin-top: -10px;
         }
       }
-      i {
-        font-size: 1.6em;
-        margin-right: 20px;
-        margin-top: 10px;
-        position: relative;
-        height: 100%;
-        z-index: 1;
-        &::after {
-          content: "\f004";
-          font-weight: 900;
-          background: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from($color-primary),
-            to($color-secondary)
-          );
-          -webkit-background-clip: text;
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
-          position: absolute;
-          transition: all 1.5s linear 0s;
-          left: 50%;
-          width: 100%;
-          top: 50%;
-          transform: translate(-50%,-50%) scale(0,0);
-          
-        }
-        &:hover::after {
-          transform: translate(-50%,-50%) scale(1);
-          
-        }
-      }
+      
     }
   }
 }

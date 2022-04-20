@@ -445,6 +445,32 @@ ol {
   margin-bottom: 30px;
 }
 
+.heart {
+  font-size: 1.6em;
+  margin-right: 20px;
+  margin-top: 10px;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+.heart::after {
+  content: "\f004";
+  font-weight: 900;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF76DA));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  transition: all 1.5s linear 0s;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0, 0);
+}
+.heart:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
 header {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
   padding: 6px;
@@ -662,31 +688,6 @@ footer div i.fas {
   font-weight: lighter;
   font-size: 1.2em;
   margin-top: -10px;
-}
-#restaurants > div figcaption i {
-  font-size: 1.6em;
-  margin-right: 20px;
-  margin-top: 10px;
-  position: relative;
-  height: 100%;
-  z-index: 1;
-}
-#restaurants > div figcaption i::after {
-  content: "\f004";
-  font-weight: 900;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF76DA));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
-  transition: all 1.5s linear 0s;
-  left: 50%;
-  width: 100%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(0, 0);
-}
-#restaurants > div figcaption i:hover::after {
-  transform: translate(-50%, -50%) scale(1);
 }
 
 #loader {
