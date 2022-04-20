@@ -787,34 +787,6 @@ footer div i.fas {
   font-family: "Shrikhand", cursive;
   font-size: 1.5em;
 }
-#menu div i {
-  margin-top: 20px;
-  margin-right: 10px;
-  font-size: 2em;
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  cursor: pointer;
-}
-#menu div i::after {
-  opacity: 0;
-  content: "\f004";
-  font-weight: 900;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF76DA));
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
-  transition: all 1.5s linear 0s;
-  left: 0;
-  bottom: 15%;
-  width: 100%;
-  height: 0;
-}
-#menu div i:hover::after {
-  height: 80%;
-  z-index: -1;
-  opacity: 1;
-}
 #menu div > a {
   margin: 0 auto;
   margin-bottom: 50px;
