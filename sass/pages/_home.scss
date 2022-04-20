@@ -155,10 +155,12 @@
         }
       }
       i {
-        font-size: 23px;
+        font-size: 1.6em;
         margin-right: 20px;
         margin-top: 10px;
         position: relative;
+        height: 100%;
+        z-index: 1;
         &::after {
           content: "\f004";
           font-weight: 900;
@@ -169,6 +171,7 @@
             from($color-primary),
             to($color-secondary)
           );
+          -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
           position: absolute;
