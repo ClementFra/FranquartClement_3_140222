@@ -471,6 +471,20 @@ ol {
   transform: translate(-50%, -50%) scale(1);
 }
 
+@keyframes disappear {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 header {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
   padding: 6px;
@@ -713,20 +727,6 @@ footer div i.fas {
   animation: spin 2s linear infinite;
 }
 
-@keyframes disappear {
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 @media screen and (min-width: 768px) {
   #steps > div ol {
     width: 50%;
