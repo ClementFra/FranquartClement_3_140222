@@ -151,6 +151,7 @@
           font-weight: lighter;
           font-size: 1.2em;
           margin-top: -10px;
+
         }
       }
       i {
@@ -164,11 +165,36 @@
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           font-weight: bold;
+
         }
       }
+      
     }
   }
 }
+#loader {
+  position: fixed;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disappear 200ms 1s forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div {
+    border-top: 16px solid $color_primary;
+    border-right: 16px solid $color_secondary;
+    border-bottom: 16px solid $color_ter;
+    border-left: 16px solid $color_primary_light;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+}
+
 
 #loader {
   position: fixed;

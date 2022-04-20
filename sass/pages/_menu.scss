@@ -22,19 +22,6 @@
       font-family: "Shrikhand", cursive;
       font-size: 1.5em;
     }
-    i {
-      margin-top: 20px;
-      margin-right: 10px;
-      font-size: 25px;
-      &:hover {
-        animation: fill 1s ease-out;
-        background-image: linear-gradient($color_secondary, $color_primary);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: bold;
-      }
-    }
   }
   div > a {
     margin: 0 auto;
