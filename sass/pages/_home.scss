@@ -88,7 +88,6 @@
     color: lightslategray;
   }
 }
-
 #restaurants {
   background-color: $color_back_lite;
   > div {
@@ -170,6 +169,7 @@
     }
   }
 }
+
 #loader {
   position: fixed;
   background-color: #ffffff;
@@ -207,6 +207,7 @@
     transform: rotate(360deg);
   }
 }
+
 
 @media screen and (min-width: 768px) {
   #steps > div {
