@@ -159,10 +159,7 @@
         margin-right: 20px;
         margin-top: 10px;
         position: relative;
-        z-index: 1;
-        height: 90%;
         &::after {
-          opacity: 0;
           content: "\f004";
           font-weight: 900;
           background: -webkit-gradient(
@@ -176,16 +173,15 @@
           -webkit-text-fill-color: transparent;
           position: absolute;
           transition: all 1.5s linear 0s;
-          left: 0;
-          bottom: 15%;
+          left: 50%;
           width: 100%;
-          height: 0;
-         
+          top: 50%;
+          transform: translate(-50%,-50%) scale(0,0);
+          
         }
         &:hover::after {
-          height: 80%;
-          z-index: -1;
-          opacity: 1;
+          transform: translate(-50%,-50%) scale(1);
+          
         }
       }
     }
