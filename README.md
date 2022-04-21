@@ -1,19 +1,22 @@
-## Ohmyfood, order ur meal
-***
-This projet, forms part of the Openclassrooms course for web development, focus mainly on Sass and CSS 3 and annimations.
-Languages used: HTML and CSS.
-## Required :
+## Ohmyfood
+Your online meal order !
+**
+This project is part of the Openclassrooms development course, assessing skills in animation and Css.
+## language used:
 
-* Install node.js, version 8.5.0 or later.
+* The languages used are HTML and Css via Sass preprocessor.
 
-## Installation
+## Required:
 
-Clone the Github repository, then open the folder in your code editor.
-Install Sass globally with: npm -g install sass.
+* It is required to use node.js 8.5.0 .
+## Installation:
 
-## Use
+* To install clone the Github repository in your text editor example Visual studio code, you will need to install Sass in order to enjoy the site.
+* To install Sass please enter the command npm -g install sass.
 
-Use *npm run start* command to get the css code compressed, it's used for the production mode.
-Use *npm run sass* command before start coding: the code was automatically compile any changes to *style.css*.
+## Use:
+
+* Please use the *npm run sass* command before starting any changes, the code will be automatically compiled in the style.css folder.
+* If you are using production mode, use the *npm run start* command.
 
 
