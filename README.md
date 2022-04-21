@@ -11,7 +11,7 @@ This project is part of the Openclassrooms development course, assessing skills 
 ## Installation:
 
 * To install clone the Github repository in your text editor example Visual studio code, you will need to install Sass in order to enjoy the site.
-* To install Sass please enter the command npm -g install sass.
+* To install Sass please enter the command npm -g install sass or install the extension in Visual studio Code, "Live Sass compiler".
 
 ## Use:
 
