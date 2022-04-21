@@ -1,6 +1,5 @@
 ## Ohmyfood
 Your online meal order !
-**
 This project is part of the Openclassrooms development course, assessing skills in animation and Css.
 ## language used:
 
