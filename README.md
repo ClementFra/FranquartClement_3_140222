@@ -7,7 +7,7 @@ This project is part of the Openclassrooms development course, assessing skills 
 
 ## Required:
 
-* It is required to use node.js 8.5.0 .
+* It is required to use node.js 16.14.0 .
 ## Installation:
 
 * To install clone the Github repository in your text editor example Visual studio code, you will need to install Sass in order to enjoy the site.
