@@ -477,6 +477,24 @@ ol {
     transform: rotate(360deg);
   }
 }
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 header {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
   padding: 6px;
@@ -812,16 +830,6 @@ footer div i.fas {
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.2);
   animation: appear 0.8s both;
 }
-@keyframes appear {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 #menu #entree article:hover .icon,
 #menu #dish article:hover .icon,
 #menu #dessert article:hover .icon {
@@ -830,15 +838,7 @@ footer div i.fas {
 #menu #entree article:hover span,
 #menu #dish article:hover span,
 #menu #dessert article:hover span {
-  animation: spin 500ms;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  animation: spinner 500ms;
 }
 #menu #entree article div,
 #menu #dish article div,
