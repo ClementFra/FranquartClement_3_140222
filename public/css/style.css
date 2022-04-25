@@ -797,6 +797,10 @@ footer div i.fas {
   font-family: "Shrikhand", cursive;
   font-size: 1.5em;
 }
+#menu div i {
+  font-size: 23px;
+  margin: 20px 10px 0 0;
+}
 #menu div > a {
   margin: 0 auto;
   margin-bottom: 50px;
