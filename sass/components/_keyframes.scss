@@ -1,3 +1,4 @@
+/* keyframe loader*/
 @keyframes disappear {
   100% {
     opacity: 0;
@@ -13,7 +14,7 @@
     transform: rotate(360deg);
   }
 }
-
+/* keyframe rotation checkbox*/
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
@@ -23,7 +24,7 @@
 
   }
 }
-
+/* keyframe menu*/
 @keyframes appear {
   0% {
     transform: translateY(50%);
