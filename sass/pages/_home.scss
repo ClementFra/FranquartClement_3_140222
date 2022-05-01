@@ -1,3 +1,4 @@
+/*Search-bar*/
 #search-bar {
   background-color: $color_back_search;
   p {
@@ -31,6 +32,7 @@
     margin-bottom: 30px;
   }
 }
+/*Menu*/
 #steps > div {
   display: flex;
   flex-direction: column;
@@ -88,6 +90,7 @@
     color: lightslategray;
   }
 }
+/*Restaurant-card*/
 #restaurants {
   background-color: $color_back_lite;
   > div {
@@ -109,6 +112,7 @@
         width: 100%;
       }
     }
+    /*Description restaurants*/
     figure {
       background-color: white;
       border-radius: 15px;
@@ -157,6 +161,7 @@
     }
   }
 }
+/* loader-page*/
 #loader {
   position: fixed;
   background-color: #ffffff;
@@ -179,7 +184,7 @@
     animation: spin 2s linear infinite;
   }
 }
-
+/*Media_querry tablette*/
 @media screen and (min-width: 768px) {
   #steps > div {
     ol {
@@ -211,6 +216,7 @@
     }
   }
 }
+/*Media-querry desktop*/
 @media screen and (min-width: 1200px) {
   #restaurants > div {
     article {
